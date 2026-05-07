@@ -654,7 +654,7 @@ li {
     background-repeat: no-repeat;
     -webkit-animation: pulse 1s infinite linear;
     animation: pulse 1s infinite linear;
-    background-image: url(../images/icons/preloader.png);
+    background-image: url(../images/Fivefox-Icon-W.png);
     content: "";
 }
 
@@ -765,7 +765,7 @@ li {
     background-repeat: no-repeat;
     -webkit-animation: pulse 1s infinite linear;
     animation: pulse 1s infinite linear;
-    background-image: url(../images/icons/preloader.png);
+    background-image: url(../images/Fivefox-Icon-W.png);
     content: "";
 }
 
@@ -4980,8 +4980,7 @@ Main Header
 
 .header-style-one .header-lower .inner-container .main-menu .navigation>li>a {
     font-family: var(--heading-font-family);
-    font-weight: 400;
-    text-transform: uppercase;
+    font-weight: 400; 
     color: var(--theme-color-white);
 }
 
@@ -6730,7 +6729,7 @@ Section Title
     position: relative;
     letter-spacing: -2%;
     text-transform: uppercase;
-    color: var(--theme-color1);
+    color: #c7e1ff;
     display: inline-block;
     padding-left: 17px;
     margin-bottom: 4px;
@@ -21963,7 +21962,7 @@ Sidebar
     color: var(--theme-color1) !important;
 }
 .header-style-one .header-lower .inner-container .main-menu .navigation > li.current > a {
-    color: var(--theme-color1) !important;
+    color: #c7e1ff !important;
 }
 
 /* Dropdown */
