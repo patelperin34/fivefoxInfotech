@@ -7296,6 +7296,8 @@ Section Title
     display: block;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
+    height: 28rem;
+    object-fit: cover;
 }
 
 .project-block .inner-block .image img:first-child {
@@ -9217,7 +9219,12 @@ Section Title
 
 .services-section .outer-box {
     position: relative;
-    background: linear-gradient(135deg, #060c18 0%, #06203f 40%, #0b2a50 70%, #040d1a 100%);\n    border-radius: 30px;\n    max-width: 1875px;\n    margin: 0 auto;\n    padding: 120px 0;\n    overflow: hidden;
+    background: linear-gradient(135deg, #060c18 0%, #06203f 40%, #0b2a50 70%, #040d1a 100%);
+    border-radius: 30px;
+    max-width: 1875px;
+    margin: 0 auto;
+    padding: 120px 0;
+    overflow: hidden;
 }
 
 @media (max-width: 991.98px) {
@@ -9718,11 +9725,7 @@ Section Title
 .service-block-two.swiper-slide-active .inner-block .arrow-icon {
     scale: 1;
 }
-
-.service-block-two.swiper-slide-active .inner-block .icon img {
-    -webkit-animation: rotateX 10s linear infinite;
-    animation: rotateX 10s linear infinite;
-}
+ 
 
 .service-block-two.swiper-slide-active .inner-block .content .title a {
     color: var(--theme-color1);
@@ -9748,12 +9751,7 @@ Section Title
 .service-block-two .inner-block:hover .arrow-icon {
     scale: 1;
 }
-
-.service-block-two .inner-block:hover .icon img {
-    -webkit-animation: rotateX 10s linear infinite;
-    animation: rotateX 10s linear infinite;
-}
-
+ 
 .service-block-two .inner-block:hover .content .title a {
     color: var(--theme-color1);
 }
@@ -9834,7 +9832,7 @@ Section Title
     border-radius: 40px;
     max-width: 1840px;
     margin: -100px auto 0;
-    padding: 248px 15px 220px;
+    padding: 150px;
     overflow: hidden;
     z-index: 0;
 }
@@ -11326,16 +11324,7 @@ Section Title
 .funfact-section-two .title-box .title span {
     color: var(--theme-color1);
 }
-
-.funfact-section-two .inner-row {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[4];
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-flow: column;
-    -ms-grid-rows: (auto)[1];
-    grid-template-rows: repeat(1, auto);
-}
+ 
 
 .funfact-section-two .inner-row>*:nth-child(1) {
     -ms-grid-row: 1;
@@ -11358,12 +11347,7 @@ Section Title
 }
 
 @media (max-width: 991.98px) {
-    .funfact-section-two .inner-row {
-        -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-        -ms-grid-rows: (auto)[2];
-        grid-template-rows: repeat(2, auto);
-    }
+   
     .funfact-section-two .inner-row>*:nth-child(1) {
         -ms-grid-row: 1;
         -ms-grid-column: 1;
@@ -11383,13 +11367,7 @@ Section Title
 }
 
 @media (max-width: 575.98px) {
-    .funfact-section-two .inner-row {
-        -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-        -ms-grid-rows: (auto)[4];
-        grid-template-rows: repeat(4, auto);
-        text-align: center;
-    }
+    
     .funfact-section-two .inner-row>*:nth-child(1) {
         -ms-grid-row: 1;
         -ms-grid-column: 1;
@@ -14098,11 +14076,12 @@ Testimonial Section
 
 .why-choose-us-section-two .content-column .inner-column .info-box .info {
     position: relative;
-    padding: 32px 0 48px 24px;
+    padding: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 21px;
+    border-radius: 20px;
 }
 
 @media (max-width: 767.98px) {
@@ -14126,18 +14105,7 @@ Testimonial Section
     }
 }
 
-.why-choose-us-section-two .content-column .inner-column .info-box .info.one {
-    padding-left: 0;
-    padding-right: 11px;
-    border-right: 1px solid rgba(var(--theme-color-black-rgb), 0.15);
-}
-
-@media (max-width: 767.98px) {
-    .why-choose-us-section-two .content-column .inner-column .info-box .info.one {
-        border-right: none;
-        padding-right: 0;
-    }
-}
+ 
 
 .why-choose-us-section-two .content-column .inner-column .info-box .info:hover .icon {
     background-color: var(--theme-color-dark);
@@ -18459,7 +18427,7 @@ Page Title
 
 ***/
 
-@-webkit-keyframes "ripple" {
+@-webkit-keyframes ripple {
     70% {
         -webkit-box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);
         box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);
@@ -18470,7 +18438,7 @@ Page Title
     }
 }
 
-@keyframes "ripple" {
+@keyframes ripple {
     70% {
         -webkit-box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);
         box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);

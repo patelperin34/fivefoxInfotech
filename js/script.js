@@ -415,7 +415,7 @@ var THEMEMASCOT = {};
                 type: "chars, words"
             })
             tl.from(itemSplitted.chars, {
-                duration: 1,
+                duration: 0.5,
                 delay: 0.5,
                 x: 100,
                 autoAlpha: 0,
