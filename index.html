@@ -76,7 +76,109 @@
                                     <ul class="navigation">
                                         <li class="current"><a href="index.html">Home</a></li>
                                         <li><a href="page-about.html">About Us</a></li>
-                                        <li><a href="page-services.html">Services</a></li>
+                                        <li class="has-mega-menu">
+                                            <a href="page-services.html">Services</a>
+                                            <div class="mega-menu">
+                                                <div class="mega-menu-inner">
+
+                                                    <div class="mega-col">
+                                                        <div class="mega-col-title">Magento Service</div>
+                                                        <ul>
+                                                            <li><a href="#">Magento 2 Support &amp; Maintenance</a></li>
+                                                            <li><a href="#">Magento 2 Development</a></li>
+                                                            <li><a href="#">Magento 2 Upgrade</a></li>
+                                                            <li><a href="#">Magento 2 Migration</a></li>
+                                                            <li><a href="#">Magento 2 PWA</a></li>
+                                                            <li><a href="#">Magento 2 Integration</a></li>
+                                                            <li><a href="#">Magento 2 Extension</a></li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="mega-col">
+                                                        <div class="mega-col-title">Ecommerce Development</div>
+                                                        <ul>
+                                                            <li><a href="#">Magento Development</a></li>
+                                                            <li><a href="#">Shopify Development</a></li>
+                                                            <li><a href="#">WooCommerce Development</a></li>
+                                                            <li><a href="#">Shopware Development</a></li>
+                                                            <li><a href="#">Hyvä Theme Development</a></li>
+                                                        </ul>
+                                                        <div class="mega-col-title mega-col-title-sub">Shopware Service</div>
+                                                        <ul>
+                                                            <li><a href="#">Shopware Plugin</a></li>
+                                                            <li><a href="#">Shopware Theme</a></li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="mega-col">
+                                                        <div class="mega-col-title">Mobile App Development</div>
+                                                        <ul>
+                                                            <li><a href="#">Android App Development</a></li>
+                                                            <li><a href="#">iOS App Development</a></li>
+                                                            <li><a href="#">Flutter Development</a></li>
+                                                            <li><a href="#">React Native App Development</a></li>
+                                                        </ul>
+                                                        <div class="mega-col-title mega-col-title-sub">UI/UX Design</div>
+                                                        <ul>
+                                                            <li><a href="#">UI-UX Design</a></li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="mega-col">
+                                                        <div class="mega-col-title">Website Development</div>
+                                                        <ul>
+                                                            <li><a href="#">WordPress Development</a></li>
+                                                            <li><a href="#">Webflow Development</a></li>
+                                                            <li><a href="#">Drupal Development</a></li>
+                                                        </ul>
+                                                        <div class="mega-col-title mega-col-title-sub">Backend Development</div>
+                                                        <ul>
+                                                            <li><a href="#">NodeJS Development</a></li>
+                                                            <li><a href="#">PHP Development</a></li>
+                                                            <li><a href="#">Laravel Development</a></li>
+                                                        </ul>
+                                                        <div class="mega-col-title mega-col-title-sub">Frontend Development</div>
+                                                        <ul>
+                                                            <li><a href="#">Angular Development</a></li>
+                                                            <li><a href="#">ReactJS Development</a></li>
+                                                            <li><a href="#">Vue JS Development</a></li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="mega-col mega-col-contact">
+                                                        <div class="mega-col-title">Get In Touch</div>
+                                                        <div class="mega-contact-item">
+                                                            <div class="mega-contact-icon mega-contact-icon-wa">
+                                                                <i class="fa-brands fa-whatsapp"></i>
+                                                            </div>
+                                                            <div class="mega-contact-text">
+                                                                <span class="mega-contact-label">Sales</span>
+                                                                <a href="https://wa.me/919712445450">+91 971-244-5450</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mega-contact-item">
+                                                            <div class="mega-contact-icon mega-contact-icon-wa">
+                                                                <i class="fa-brands fa-whatsapp"></i>
+                                                            </div>
+                                                            <div class="mega-contact-text">
+                                                                <span class="mega-contact-label">HR Manager</span>
+                                                                <a href="https://wa.me/916352698617">+91 635-269-8617</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mega-contact-item">
+                                                            <div class="mega-contact-icon">
+                                                                <i class="fa-solid fa-envelope"></i>
+                                                            </div>
+                                                            <div class="mega-contact-text">
+                                                                <span class="mega-contact-label">Email Us</span>
+                                                                <a href="mailto:sales@dolphinwebsolution.com">sales@dolphinwebsolution.com</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
                                         <li><a href="#">Industries</a></li>
                                         <li><a href="#">Technologies</a></li>
                                         <li><a href="page-projects.html">Portfolio</a></li>
@@ -1318,12 +1420,12 @@
                 <span>LinkedIn</span>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-youtube"></i>
-                <span>YouTube</span>
-              </a>
-            </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+          </li>
           </ul>
 
         </div>
@@ -1362,6 +1464,48 @@
     <script src="js/script.js"></script>
 
     <script>
+    /* ── Mega Menu JS ── */
+    (function () {
+        function initMegaMenu(trigger) {
+            const menu = trigger.querySelector('.mega-menu');
+            if (!menu) return;
+
+            function getBottom() {
+                const header = trigger.closest('.sticky-header') || trigger.closest('header');
+                return header.getBoundingClientRect().bottom;
+            }
+            function openMenu() {
+                menu.style.top = getBottom() + 'px';
+                menu.classList.add('is-open');
+            }
+            function closeMenu() {
+                menu.classList.remove('is-open');
+            }
+
+            trigger.addEventListener('mouseenter', openMenu);
+            trigger.addEventListener('mouseleave', function (e) {
+                if (!menu.contains(e.relatedTarget)) closeMenu();
+            });
+            menu.addEventListener('mouseenter', openMenu);
+            menu.addEventListener('mouseleave', function (e) {
+                if (!trigger.contains(e.relatedTarget)) closeMenu();
+            });
+            document.addEventListener('click', function (e) {
+                if (!trigger.contains(e.target) && !menu.contains(e.target)) closeMenu();
+            });
+            window.addEventListener('scroll', function () {
+                if (menu.classList.contains('is-open')) menu.style.top = getBottom() + 'px';
+            });
+            window.addEventListener('resize', function () {
+                if (menu.classList.contains('is-open')) menu.style.top = getBottom() + 'px';
+            });
+        }
+
+        document.querySelectorAll('.has-mega-menu').forEach(initMegaMenu);
+    })();
+    </script>
+
+    <script>
     (function(){
         const canvas = document.getElementById('fivefox-particles');
         if (!canvas) return;
@@ -1379,11 +1523,19 @@
             off.width = W; off.height = H;
             const c = off.getContext('2d');
             const fs = Math.min(W / 2.8, 160);
+            const fs2 = Math.min(W / 6, 70);
             c.fillStyle = '#fff';
-            c.font = `900 ${fs}px 'Kumbh Sans', sans-serif`;
-            c.textAlign = 'center';
             c.textBaseline = 'middle';
-            c.fillText('FiveFox', W / 2, H / 2);
+            // Draw FiveFox centered
+            c.font = `900 ${fs}px 'DM Sans', sans-serif`;
+            c.textAlign = 'center';
+            const line1Y = H / 2 - fs2 * 0.5;
+            c.fillText('FiveFox', W / 2, line1Y); 
+            const fivefoxWidth = c.measureText('FiveFox').width;
+            const rightEdge = W / 2 + fivefoxWidth / 2;
+            c.font = `600 ${fs2}px 'DM Sans', sans-serif`;
+            c.textAlign = 'right';
+            c.fillText('Infotech', rightEdge, line1Y + fs * 0.6);
             const data = c.getImageData(0, 0, W, H).data;
             const pts = [];
             const gap = 5;
