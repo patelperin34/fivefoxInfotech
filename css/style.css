@@ -6632,8 +6632,12 @@ Section Title
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
 }
-
+.shape-2 img {
+    width: 100%;
+    opacity: 0.6;
+}
 .banner-section .shape-3 {
     position: absolute;
     bottom: -86px;
