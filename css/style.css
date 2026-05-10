@@ -6570,7 +6570,7 @@ Section Title
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: -4%;
-    color: var(--theme-color1);
+    color: #3792ff;
     margin-bottom: 10px;
 }
 
@@ -21283,8 +21283,7 @@ Sidebar
 /* ============================================
    Home Page - About Section Dark Theme
    ============================================ */
-.about-section { background-color: #0d0d0d; }
-.about-section .sec-title .sub-title { color: #a0a0a0; }
+.about-section { background-color: #0d0d0d; } 
 .about-section .sec-title .title,
 .about-section .about-block .title,
 .about-section .h6.name { color: #ffffff; }
@@ -21300,8 +21299,7 @@ Sidebar
    Home Page - Services Section Dark Theme
    ============================================ */
 .services-section { background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%) !important; }
-.services-section .bg-image { display: none; }
-.services-section .sec-title .sub-title { color: #a0a0a0; }
+.services-section .bg-image { display: none; } 
 .services-section .sec-title .title { color: #ffffff; }
 .services-section .sec-title-box .text { color: #b0b0b0; }
 
@@ -21413,8 +21411,7 @@ Sidebar
 }
 .services-section-two .outer-box {
     background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%);
-}
-.services-section-two .outer-box .sec-title-box .sec-title .sub-title { color: #a0a0a0; }
+} 
 .services-section-two .outer-box .sec-title-box .sec-title .title { color: #ffffff; }
 .services-section-two .outer-box .sec-title-box .text { color: #6b7280; }
 
@@ -21496,8 +21493,7 @@ Sidebar
    ============================================ */
 .projects-section {
     background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%);
-}
-.projects-section .sec-title .sub-title { color: #a0a0a0; }
+} 
 .projects-section .sec-title .title { color: #ffffff; }
 .projects-section .sec-title .title a { color: #ffffff; }
 
@@ -21539,8 +21535,7 @@ Sidebar
 .tech-stack-section {
     background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%);
     padding: 100px 0;
-}
-.tech-stack-section .sec-title .sub-title { color: #a0a0a0; }
+} 
 .tech-stack-section .sec-title .title { color: #ffffff; }
 .tech-stack-section .sec-title .text {
     color: #6b7280;
@@ -21658,8 +21653,7 @@ Sidebar
    ============================================ */
 .projects-section-two {
     background: linear-gradient(135deg, #020508 0%, #011732 50%, #010305 100%);
-}
-.projects-section-two .sec-title .sub-title { color: #a0a0a0; }
+} 
 .projects-section-two .sec-title .title { color: #ffffff; }
 
 /* Project Block Two Cards */
@@ -21721,8 +21715,7 @@ Sidebar
    ============================================ */
 .why-choose-us-section-two {
     background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%);
-}
-.why-choose-us-section-two .sec-title .sub-title { color: #a0a0a0; }
+} 
 .why-choose-us-section-two .sec-title .title { color: #ffffff; }
 .why-choose-us-section-two .sec-title .text { color: #6b7280; }
 
@@ -21756,8 +21749,7 @@ Sidebar
    ============================================ */
 .testimonial-section-two {
     background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%);
-}
-.testimonial-section-two .sec-title-box .sec-title .sub-title { color: #a0a0a0; }
+} 
 .testimonial-section-two .sec-title-box .sec-title .title { color: #ffffff; }
 
 /* Nav Buttons */
@@ -21811,8 +21803,7 @@ Sidebar
    ============================================ */
 .blog-section {
     background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%);
-}
-.blog-section .sec-title .sub-title { color: #a0a0a0; }
+} 
 .blog-section .sec-title .title { color: #ffffff; }
 
 /* Blog Cards */
@@ -21820,8 +21811,7 @@ Sidebar
     background-color: #050a0f;
     border: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
-}
-.blog-section .blog-block .inner-block .content-box .inner-box .sub-title { color: #a0a0a0; }
+} 
 .blog-section .blog-block .inner-block .content-box .inner-box .title a { color: #e5e7eb; }
 .blog-section .blog-block .inner-block .content-box .inner-box .time-text { color: #6b7280; }
 .blog-section .blog-block .inner-block .content-box .inner-box .btn-more { color: #9ca3af; }
