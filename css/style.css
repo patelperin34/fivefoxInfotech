@@ -53,9 +53,9 @@ License: copyright commercial
     --r: 30px; 
     --s: 50px; 
     --_m: /calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%, #0000 72%) no-repeat;
-    --theme-color1: #06203f;
+    --theme-color1: #122346;
     --theme-color2: #131313;
-    --theme-color1-rgb: 6, 32, 63;
+    --theme-color1-rgb: 18, 35, 70;
     --theme-color2-rgb: 19, 19, 19;
     --theme-color1-text-color: #ffffff;
     --theme-color2-text-color: #ffffff;
@@ -66,16 +66,16 @@ License: copyright commercial
     --review-color: #FFAA18;
     --theme-color-black: #000000;
     --theme-color-black-rgb: 0, 0, 0;
-    --theme-color-dark: #131313;
+    --theme-color-dark: #122346;
     --theme-color-gray: #f6f6f6;
     --gradient-1: linear-gradient(181.35deg, rgba(5, 15, 19, 0) 1.15%, rgba(2, 223, 130, 0.1) 98.91%);
-    --text-color: #838383;
-    --headings-color: #131313;
+    --text-color: #9fb0d1;
+    --headings-color: #eaf1ff;
     --link-color: var(--theme-color1);
     --link-hover-color: var(--theme-color1);
     --body-font-family: "DM Sans", sans-serif;
     --heading-font-family: "Outfit", sans-serif;
-    --body-bg: #ffffff;
+    --body-bg: #122346;
     --body-font-size: 16px;
     --body-line-height: 1.7;
     --body-font-weight: 500;
@@ -152,7 +152,7 @@ License: copyright commercial
 }
 
 body {
-    background-color: #020508;
+    background-color: #122346;
     background-attachment: fixed;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
@@ -21256,7 +21256,13 @@ Sidebar
 /* ============================================
    Home Page - About Section Dark Theme
    ============================================ */
-.about-section { background-color: #0d0d0d; } 
+.about-section {
+    background: #122346 !important;
+}
+.about-section .auto-container {
+    position: relative;
+    z-index: 1;
+}
 .about-section .sec-title .title,
 .about-section .about-block .title,
 .about-section .h6.name { color: #ffffff; }
@@ -21265,25 +21271,25 @@ Sidebar
 .about-section .designation { color: #b0b0b0; }
 .about-section .list-style-one li span { color: #cccccc; }
 .about-section .list-style-one li .icon { color: #ffffff; }
-.about-section .about-block .inner-block { background-color: #1a1a1a; border-color: #333; }
-.about-section .list-style-box { background-color: #1a1a1a; border-color: #333; }
+.about-section .about-block .inner-block { background-color: #19305e; border-color: rgba(255, 255, 255, 0.1); }
+.about-section .list-style-box { background-color: #19305e; border-color: rgba(255, 255, 255, 0.1); }
 
 /* ============================================
    Home Page - Services Section Dark Theme
    ============================================ */
-.services-section { background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%) !important; }
+.services-section { background: linear-gradient(135deg, #122346 0%, #18305f 50%, #0f1d3b 100%) !important; }
 .services-section .bg-image { display: none; } 
 .services-section .sec-title .title { color: #ffffff; }
 .services-section .sec-title-box .text { color: #b0b0b0; }
 
 /* Service Cards */
 .services-section .service-block .inner-block {
-    background-color: #050a0f !important;
+    background-color: #19305e !important;
     border: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
 }
 .services-section .service-block .inner-block:before {
-    background-color: #0a1628 !important;
+    background-color: #224279 !important;
 }
 .services-section .service-block .inner-block .number { color: rgba(255, 255, 255, 0.06); }
 .services-section .service-block .inner-block .title,
@@ -21299,9 +21305,9 @@ Sidebar
 
 /* Service Cards Hover */
 .services-section .service-block .inner-block:hover {
-    background-color: #06203f !important;
-    border-color: rgba(6, 32, 63, 0.8);
-    box-shadow: 0 12px 40px rgba(6, 32, 63, 0.6);
+    background-color: #224279 !important;
+    border-color: rgba(135, 176, 255, 0.35);
+    box-shadow: 0 12px 40px rgba(7, 16, 36, 0.35);
 }
 .services-section .service-block .inner-block:hover .title a { color: #ffffff !important; }
 .services-section .service-block .inner-block:hover .text { color: #cbd5e1; }
@@ -21313,20 +21319,20 @@ Sidebar
 }
 .services-section .service-block .inner-block:hover .btn-more span { color: #ffffff; }
 .services-section .service-block .inner-block:hover .btn-more img { filter: brightness(0) invert(1); }
-.services-section .bottom-box .dot { background-color: #020508; }
+.services-section .bottom-box .dot { background-color: #122346; }
 
 /* ============================================
    Home Page - Work Section (How it works) Dark Theme
    ============================================ */
 .work-section {
-    background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%);
+    background: linear-gradient(135deg, #122346 0%, #18305f 50%, #0f1d3b 100%);
 }
 .work-section .sec-title .sub-title { color: #a0a0a0; }
 .work-section .sec-title .title { color: #ffffff; }
 
 /* Work Cards */
 .work-block .inner-block {
-    background-color: #050a0f;
+    background-color: #19305e;
     border: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
 }
@@ -21338,9 +21344,9 @@ Sidebar
 
 /* Work Cards Hover */
 .work-block .inner-block:hover {
-    background-color: #06203f;
-    border-color: rgba(6, 32, 63, 0.8);
-    box-shadow: 0 12px 40px rgba(6, 32, 63, 0.6);
+    background-color: #224279;
+    border-color: rgba(135, 176, 255, 0.35);
+    box-shadow: 0 12px 40px rgba(7, 16, 36, 0.35);
 }
 .work-block .inner-block:hover .content-box .inner-box .title { color: #ffffff; }
 .work-block .inner-block:hover .content-box .inner-box .text { color: #cbd5e1; }
@@ -21348,7 +21354,7 @@ Sidebar
 
 /* Bottom Box */
 .work-section .bottom-box .inner-box {
-    background-color: #050a0f;
+    background-color: #19305e;
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 .work-section .bottom-box .inner-box .icon { color: #a0a0a0; }
@@ -21362,7 +21368,7 @@ Sidebar
    Home Page - Our Service Section Dark Theme
    ============================================ */
 .services-section .outer-box {
-    background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%);
+    background: linear-gradient(135deg, #122346 0%, #18305f 50%, #0f1d3b 100%);
 }
 .services-section .sec-title-box .sec-title .sub-title { color: #a0a0a0; }
 .services-section .sec-title-box .sec-title .title { color: #ffffff; }
@@ -21380,17 +21386,17 @@ Sidebar
    Services Section Two - Dark Theme
    ============================================ */
 .services-section-two {
-    background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%);
+    background: linear-gradient(135deg, #122346 0%, #18305f 50%, #0f1d3b 100%);
 }
 .services-section-two .outer-box {
-    background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%);
+    background: linear-gradient(135deg, #122346 0%, #18305f 50%, #0f1d3b 100%);
 } 
 .services-section-two .outer-box .sec-title-box .sec-title .title { color: #ffffff; }
 .services-section-two .outer-box .sec-title-box .text { color: #6b7280; }
 
 /* Service Block Two Cards */
 .service-block-two .inner-block {
-    background-color: #050a0f;
+    background-color: #19305e;
     border: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
 }
@@ -21405,9 +21411,9 @@ Sidebar
 
 /* Hover */
 .service-block-two .inner-block:hover {
-    background-color: #06203f;
-    border-color: rgba(6, 32, 63, 0.8);
-    box-shadow: 0 12px 40px rgba(6, 32, 63, 0.6);
+    background-color: #224279;
+    border-color: rgba(135, 176, 255, 0.35);
+    box-shadow: 0 12px 40px rgba(7, 16, 36, 0.35);
 }
 .service-block-two .inner-block:hover .content .title a { color: #ffffff; }
 .service-block-two .inner-block:hover .content .text { color: #cbd5e1; }
@@ -21418,8 +21424,8 @@ Sidebar
 
 /* Active Slide */
 .service-block-two.swiper-slide-active .inner-block {
-    background-color: #06203f;
-    border-color: rgba(6, 32, 63, 0.8);
+    background-color: #224279;
+    border-color: rgba(135, 176, 255, 0.35);
 }
 .service-block-two.swiper-slide-active .inner-block .content .title a { color: #ffffff; }
 
@@ -21441,7 +21447,7 @@ Sidebar
    ============================================ */
 .services-section-two .outer-box .service-two_button-prev,
 .services-section-two .outer-box .service-two_button-next {
-    background-color: #0a1628;
+    background-color: #1b3668;
     border: 1px solid rgba(255, 255, 255, 0.15);
     cursor: pointer;
 }
@@ -21465,7 +21471,7 @@ Sidebar
    Projects Section - Dark Theme
    ============================================ */
 .projects-section {
-    background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%);
+    background: linear-gradient(135deg, #122346 0%, #18305f 50%, #0f1d3b 100%);
 } 
 .projects-section .sec-title .title { color: #ffffff; }
 .projects-section .sec-title .title a { color: #ffffff; }
@@ -21478,7 +21484,7 @@ Sidebar
     color: #6b7280;
 }
 .projects-section .project-block .inner-block .content-box .inner-box .icon {
-    background-color: #0a1628;
+    background-color: #1b3668;
     color: #9ca3af;
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -21506,7 +21512,7 @@ Sidebar
    Technology Stack Section
    ============================================ */
 .tech-stack-section {
-    background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%);
+    background: linear-gradient(135deg, #122346 0%, #18305f 50%, #0f1d3b 100%);
     padding: 100px 0;
 } 
 .tech-stack-section .sec-title .title { color: #ffffff; }
@@ -21519,7 +21525,7 @@ Sidebar
     margin-top: 20px;
 }
 .tech-block .inner-block {
-    background-color: #050a0f;
+    background-color: #19305e;
     border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 20px;
     padding: 40px 20px;
@@ -21529,9 +21535,9 @@ Sidebar
     cursor: default;
 }
 .tech-block .inner-block:hover {
-    background-color: #06203f;
+    background-color: #224279;
     border-color: var(--theme-color1);
-    box-shadow: 0 12px 40px rgba(6, 32, 63, 0.6);
+    box-shadow: 0 12px 40px rgba(7, 16, 36, 0.35);
     transform: translateY(-6px);
 }
 .tech-block .inner-block .icon-box {
@@ -21565,10 +21571,10 @@ Sidebar
    Video Section - Dark Theme
    ============================================ */
 .video-section .outer-box {
-    background-color: #020508;
+    background-color: #122346;
 }
 .video-section .outer-box:before {
-    background: linear-gradient(135deg, rgba(2, 5, 8, 0.85) 0%, rgba(3, 13, 26, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(18, 35, 70, 0.84) 0%, rgba(24, 48, 95, 0.9) 100%);
 }
 .video-section .outer-box .bg-image img {
     filter: brightness(0.3);
@@ -21576,7 +21582,7 @@ Sidebar
 .video-section .play-now .icon {
     background-color: var(--theme-color1);
     color: #ffffff;
-    box-shadow: 0 0 0 10px rgba(6, 32, 63, 0.4);
+    box-shadow: 0 0 0 10px rgba(18, 35, 70, 0.4);
 }
 .video-section .play-now:hover .icon {
     background-color: #ffffff;
@@ -21585,17 +21591,17 @@ Sidebar
 .video-section .play-now .ripple,
 .video-section .play-now .ripple:before,
 .video-section .play-now .ripple:after {
-    box-shadow: 0 0 0 0 rgba(6, 32, 63, 0.6);
+    box-shadow: 0 0 0 0 rgba(18, 35, 70, 0.6);
 }
 
 /* ============================================
    Video Section - Dark Theme Fix
    ============================================ */
 .video-section {
-    background-color: #020508;
+    background-color: #122346;
 }
 .video-section .outer-box {
-    background-color: #020508;
+    background-color: #122346;
     position: relative;
 }
 .video-section .outer-box .bg-image {
@@ -21625,13 +21631,13 @@ Sidebar
    Projects Section Two - Dark Theme
    ============================================ */
 .projects-section-two {
-    background: linear-gradient(135deg, #020508 0%, #011732 50%, #010305 100%);
+    background: linear-gradient(135deg, #122346 0%, #18305f 50%, #0f1d3b 100%);
 } 
 .projects-section-two .sec-title .title { color: #ffffff; }
 
 /* Project Block Two Cards */
 .project-block-two .inner-block {
-    background-color: #050a0f;
+    background-color: #19305e;
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 .project-block-two .inner-block .content .cat {
@@ -21652,7 +21658,7 @@ Sidebar
 /* Nav Arrows */
 .projects-section-two .swiper-arry .arry-prev,
 .projects-section-two .swiper-arry .arry-next {
-    background-color: #0a1628;
+    background-color: #1b3668;
     color: #9ca3af;
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -21676,41 +21682,41 @@ Sidebar
    Projects Section Two - Card Gradient Light Shade Fix
    ============================================ */
 .project-block-two .inner-block:before {
-    background: linear-gradient(180deg, rgba(6, 20, 40, 0) 19.26%, #0a2040 97.47%) !important;
+    background: linear-gradient(180deg, rgba(18, 35, 70, 0) 19.26%, #1b3668 97.47%) !important;
 }
 .project-block-two .inner-block:hover:before {
     height: 47%;
-    background: linear-gradient(180deg, rgba(6, 20, 40, 0) 0%, #0d2a55 100%) !important;
+    background: linear-gradient(180deg, rgba(18, 35, 70, 0) 0%, #224279 100%) !important;
 }
 
 /* ============================================
    Why Choose Us Section Two - Dark Theme
    ============================================ */
 .why-choose-us-section-two {
-    background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%);
+    background: linear-gradient(135deg, #122346 0%, #18305f 50%, #0f1d3b 100%);
 } 
 .why-choose-us-section-two .sec-title .title { color: #ffffff; }
 .why-choose-us-section-two .sec-title .text { color: #6b7280; }
 
 /* Info Boxes */
 .why-choose-us-section-two .info-box .info {
-    background-color: #050a0f;
+    background-color: #19305e;
     border: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 .why-choose-us-section-two .info-box .info .content .title { color: #e5e7eb; }
 .why-choose-us-section-two .info-box .info .content .text { color: #6b7280; }
 .why-choose-us-section-two .info-box .info:hover {
-    background-color: #06203f;
-    border-color: rgba(6, 32, 63, 0.8);
-    box-shadow: 0 12px 40px rgba(6, 32, 63, 0.6);
+    background-color: #224279;
+    border-color: rgba(135, 176, 255, 0.35);
+    box-shadow: 0 12px 40px rgba(7, 16, 36, 0.35);
 }
 .why-choose-us-section-two .info-box .info:hover .content .title { color: #ffffff; }
 .why-choose-us-section-two .info-box .info:hover .content .text { color: #cbd5e1; }
 
 /* Funfact Box */
 .why-choose-us-section-two .funfact-box {
-    background-color: #050a0f;
+    background-color: #19305e;
     border: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
@@ -21721,14 +21727,14 @@ Sidebar
    Testimonial Section Two - Dark Theme
    ============================================ */
 .testimonial-section-two {
-    background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%);
+    background: linear-gradient(135deg, #122346 0%, #18305f 50%, #0f1d3b 100%);
 } 
 .testimonial-section-two .sec-title-box .sec-title .title { color: #ffffff; }
 
 /* Nav Buttons */
 .testimonial-section-two .arrow-box .testi-two_button-prev,
 .testimonial-section-two .arrow-box .testi-two_button-next {
-    background-color: #0a1628;
+    background-color: #1b3668;
     border: 1px solid rgba(255, 255, 255, 0.1);
     cursor: pointer;
     transition: all 300ms ease;
@@ -21745,7 +21751,7 @@ Sidebar
 
 /* Testimonial Cards */
 .testimonial-section-two .testimonial-block .inner-block {
-    background-color: #050a0f;
+    background-color: #19305e;
     border: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
 }
@@ -21764,9 +21770,9 @@ Sidebar
 
 /* Hover */
 .testimonial-section-two .testimonial-block .inner-block:hover {
-    background-color: #06203f;
-    border-color: rgba(6, 32, 63, 0.8);
-    box-shadow: 0 12px 40px rgba(6, 32, 63, 0.6);
+    background-color: #224279;
+    border-color: rgba(135, 176, 255, 0.35);
+    box-shadow: 0 12px 40px rgba(7, 16, 36, 0.35);
 }
 .testimonial-section-two .testimonial-block .inner-block:hover .text { color: #cbd5e1; }
 .testimonial-section-two .testimonial-block .inner-block:hover .info-box .author-info .name a { color: #ffffff; }
@@ -21775,13 +21781,13 @@ Sidebar
    Blog Section - Dark Theme
    ============================================ */
 .blog-section {
-    background: linear-gradient(135deg, #020508 0%, #030d1a 50%, #010305 100%);
+    background: linear-gradient(135deg, #122346 0%, #18305f 50%, #0f1d3b 100%);
 } 
 .blog-section .sec-title .title { color: #ffffff; }
 
 /* Blog Cards */
 .blog-section .blog-block .inner-block {
-    background-color: #050a0f;
+    background-color: #19305e;
     border: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
 } 
@@ -21794,9 +21800,9 @@ Sidebar
 
 /* Hover */
 .blog-section .blog-block .inner-block:hover {
-    background-color: #06203f;
-    border-color: rgba(6, 32, 63, 0.8);
-    box-shadow: 0 12px 40px rgba(6, 32, 63, 0.6);
+    background-color: #224279;
+    border-color: rgba(135, 176, 255, 0.35);
+    box-shadow: 0 12px 40px rgba(7, 16, 36, 0.35);
 }
 .blog-section .blog-block .inner-block:hover .content-box .inner-box .title a { color: #ffffff; }
 .blog-section .blog-block .inner-block:hover .content-box .inner-box .btn-more { color: var(--theme-color1); }
@@ -21808,7 +21814,7 @@ Sidebar
    Blog Section - Inner Block Dark Theme
    ============================================ */
 .blog-section .blog-block .inner-block {
-    background-color: #050a0f !important;
+    background-color: #19305e !important;
     border: 1px solid rgba(255, 255, 255, 0.05) !important;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6) !important;
 }
@@ -21833,7 +21839,7 @@ Sidebar
 
 /* Content Box */
 .blog-section .blog-block .inner-block .content-box {
-    background-color: #050a0f;
+    background-color: #19305e;
 }
 .blog-section .blog-block .inner-block .content-box .inner-box .sub-title {
     color: var(--theme-color1);
@@ -21854,12 +21860,12 @@ Sidebar
 
 /* Hover */
 .blog-section .blog-block .inner-block:hover {
-    background-color: #06203f !important;
-    border-color: rgba(6, 32, 63, 0.8) !important;
-    box-shadow: 0 12px 40px rgba(6, 32, 63, 0.6) !important;
+    background-color: #224279 !important;
+    border-color: rgba(135, 176, 255, 0.35) !important;
+    box-shadow: 0 12px 40px rgba(7, 16, 36, 0.35) !important;
 }
 .blog-section .blog-block .inner-block:hover .content-box {
-    background-color: #06203f;
+    background-color: #224279;
 }
 .blog-section .blog-block .inner-block:hover .content-box .inner-box .title a {
     color: #ffffff !important;
@@ -21875,7 +21881,7 @@ Sidebar
    Blog Section - Content Box Dark Theme Override
    ============================================ */
 .blog-section .blog-block .content-box .inner-box {
-    background-color: #050a0f !important;
+    background-color: #19305e !important;
     border-color: rgba(255, 255, 255, 0.06) !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
 }
@@ -21887,8 +21893,8 @@ Sidebar
 
 /* Hover */
 .blog-section .blog-block .inner-block:hover .content-box .inner-box {
-    background-color: #06203f !important;
-    border-color: rgba(6, 32, 63, 0.8) !important;
+    background-color: #224279 !important;
+    border-color: rgba(135, 176, 255, 0.35) !important;
 }
 .blog-section .blog-block .inner-block:hover .content-box .inner-box .title a { color: #ffffff !important; }
 .blog-section .blog-block .inner-block:hover .content-box .inner-box .btn-more { color: var(--theme-color1) !important; }
@@ -21898,22 +21904,22 @@ Sidebar
    CTA Section - Overlay Color
    ============================================ */
 .cta-section .outer-box:before {
-    background-color: #06203f !important;
+    background-color: #122346 !important;
 }
 
 /* ============================================
    CTA Section - Overlay Gradient Color Override
    ============================================ */
 .cta-section .outer-box:before {
-    background: -webkit-gradient(linear, left top, left bottom, from(#06203f), to(rgba(0, 0, 0, 0))) !important;
-    background: linear-gradient(180deg, #06203f 0%, rgba(0, 0, 0, 0) 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#122346), to(rgba(0, 0, 0, 0))) !important;
+    background: linear-gradient(180deg, #122346 0%, rgba(0, 0, 0, 0) 100%) !important;
 }
 
 /* ============================================
    Header - Dark Theme
    ============================================ */
 .main-header.header-style-one {
-    background-color: #020508;
+    background-color: #122346;
     border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 .header-style-one .header-lower .inner-container .main-menu .navigation > li > a {
@@ -21928,7 +21934,7 @@ Sidebar
 
 /* Dropdown */
 .main-menu .navigation > li > ul {
-    background-color: #050a0f;
+    background-color: #19305e;
     border: 1px solid rgba(255, 255, 255, 0.06);
 }
 .main-menu .navigation > li > ul > li {
@@ -21938,16 +21944,16 @@ Sidebar
     color: #e5e7eb !important;
 }
 .main-menu .navigation > li > ul > li:hover {
-    background-color: #06203f;
+    background-color: #224279;
 }
 .main-menu .navigation > li > ul > li > ul {
-    background-color: #050a0f;
+    background-color: #19305e;
     border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* Sticky Header */
 .sticky-header {
-    background-color: #020508 !important;
+    background-color: #122346 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 .sticky-header .main-menu .navigation > li > a,
@@ -21975,7 +21981,7 @@ Sidebar
 
 .main-header .right-box .btn-style-two {
     background-color: #ffffff;
-    color: #06203f;
+    color: #122346;
     border: 2px solid #ffffff;
 }
 
@@ -21989,7 +21995,7 @@ Sidebar
 
 /* Preloader dark theme override */
 .preloader-loaded.light .preloader-slide {
-    background-color: #0d0d0d;
+    background-color: #122346;
 }
 
 .preloader-loaded.light .text-preloader-outer .text-preloading .text-split {
@@ -22019,7 +22025,7 @@ Sidebar
     right: 0;
     top: auto;
     width: 100%;
-    background: #0f0f13;
+    background: #19305e;
     border-top: 2px solid #F7F8F0;
     border-bottom: 1px solid rgba(255,255,255,.06);
     z-index: 99999;
@@ -22172,10 +22178,10 @@ Sidebar
 .ai-services-section {
     position: relative;
     padding: 100px 0;
-    background: #03080f;
+    background: #122346;
     overflow: hidden; 
     background-image: 
-        linear-gradient(rgba(3, 8, 15, 0.86), rgba(3, 8, 15, 1)),
+        linear-gradient(rgba(18, 35, 70, 0.9), rgba(18, 35, 70, 0.98)),
         url("https://i.pinimg.com/1200x/c6/24/5a/c6245a74cdec213ed1cfa849c79715b2.jpg");
 
     background-size: cover;
@@ -22414,4 +22420,537 @@ Sidebar
     border-color: rgba(79,158,255,0.5);
     color: #4f9eff;
     transform: rotate(45deg);
+}
+
+/* ===== Cyber Security Section ===== */
+.cyber-security-section {
+    position: relative;
+    padding: 110px 0;
+    background:
+        radial-gradient(circle at top right, rgba(0, 229, 255, 0.28), transparent 30%),
+        radial-gradient(circle at bottom left, rgba(61, 102, 255, 0.26), transparent 28%),
+        linear-gradient(180deg, #122346 0%, #122346 100%);
+    overflow: hidden;
+    border-top: 1px solid rgba(125, 184, 255, 0.22);
+    border-bottom: 1px solid rgba(125, 184, 255, 0.18);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.cyber-grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(125, 184, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(125, 184, 255, 0.07) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), transparent 100%);
+    pointer-events: none;
+}
+
+.cyber-spotlight {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 880px;
+    height: 880px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(122, 201, 255, 0.16) 0%, rgba(34, 66, 121, 0.1) 34%, transparent 68%);
+    pointer-events: none;
+    z-index: 0;
+}
+ 
+
+.cyber-shell {
+    position: relative;
+    z-index: 1;
+    padding: 58px 54px;
+    border-radius: 34px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+    border: 1px solid rgba(160, 210, 255, 0.18);
+    box-shadow: 0 30px 80px rgba(7, 16, 36, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+}
+
+.cyber-shell::before {
+    content: "";
+    position: absolute;
+    inset: 16px;
+    border-radius: 24px;
+    border: 1px solid rgba(160, 210, 255, 0.12);
+    pointer-events: none;
+}
+
+.cyber-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(4px);
+    pointer-events: none;
+}
+
+.cyber-orb-one {
+    top: -110px;
+    right: 8%;
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(circle, rgba(68, 207, 255, 0.36) 0%, rgba(68, 207, 255, 0.08) 48%, transparent 72%);
+}
+
+.cyber-orb-two {
+    bottom: -120px;
+    left: 6%;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle, rgba(90, 124, 255, 0.32) 0%, rgba(90, 124, 255, 0.08) 48%, transparent 72%);
+}
+
+.cyber-content,
+.cyber-panel,
+.cyber-panel-wrap {
+    position: relative;
+    z-index: 1;
+}
+
+.cyber-badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    padding: 10px 18px;
+    margin-bottom: 18px;
+    border-radius: 999px;
+    color: #ffffff;
+    background: linear-gradient(135deg, rgba(125, 184, 255, 0.24), rgba(34, 66, 121, 0.9));
+    border: 1px solid rgba(160, 210, 255, 0.35);
+    box-shadow: 0 12px 28px rgba(7, 16, 36, 0.28);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.cyber-security-section .sec-title .title {
+    color: #ffffff;
+    max-width: 620px;
+    text-shadow: 0 10px 36px rgba(7, 16, 36, 0.35);
+    font-size: 58px;
+    line-height: 1.08;
+}
+
+.cyber-security-section .sec-title .text {
+    color: rgba(255, 255, 255, 0.65);
+    max-width: 600px;
+    line-height: 1.85;
+    margin-top: 22px;
+}
+
+.cyber-inline-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin: 34px 0 28px;
+}
+
+.cyber-inline-stat {
+    padding: 20px 22px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(125, 184, 255, 0.14), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(160, 210, 255, 0.16);
+    box-shadow: 0 16px 36px rgba(7, 16, 36, 0.18);
+}
+
+.cyber-inline-stat strong {
+    display: block;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.cyber-inline-stat span {
+    display: block;
+    color: rgba(255, 255, 255, 0.68);
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.cyber-feature-list {
+    display: grid;
+    gap: 18px;
+    margin: 38px 0 42px;
+}
+
+.cyber-feature-item {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    padding: 22px 24px;
+    border: 1px solid rgba(125, 184, 255, 0.22);
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.04));
+    backdrop-filter: blur(8px);
+    box-shadow: 0 16px 36px rgba(7, 16, 36, 0.2);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cyber-feature-item:hover {
+    transform: translateY(-6px) scale(1.01);
+    border-color: rgba(160, 210, 255, 0.42);
+    box-shadow: 0 24px 50px rgba(7, 16, 36, 0.3);
+}
+
+.cyber-feature-item .icon {
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #79c7ff;
+    font-size: 20px;
+    background: linear-gradient(135deg, rgba(0, 229, 255, 0.16), rgba(79, 158, 255, 0.08));
+    border: 1px solid rgba(121, 199, 255, 0.2);
+}
+
+.cyber-feature-item .content .title {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.cyber-feature-item .content .text {
+    color: rgba(255, 255, 255, 0.58);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.cyber-action-row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.cyber-proof-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 52px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    color: #e9f4ff;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(160, 210, 255, 0.16);
+    box-shadow: 0 14px 32px rgba(7, 16, 36, 0.18);
+}
+
+.cyber-proof-chip i {
+    color: #8ad5ff;
+}
+
+.cyber-panel-wrap {
+    padding: 26px 0;
+}
+
+.cyber-floating-card {
+    position: absolute;
+    z-index: 2;
+    min-width: 180px;
+    padding: 16px 18px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(19, 48, 94, 0.96), rgba(34, 66, 121, 0.92));
+    border: 1px solid rgba(160, 210, 255, 0.22);
+    box-shadow: 0 18px 40px rgba(7, 16, 36, 0.28);
+}
+
+.cyber-floating-top {
+    top: 0;
+    right: -10px;
+}
+
+.cyber-floating-bottom {
+    bottom: 8px;
+    left: -18px;
+}
+
+.cyber-floating-label {
+    display: block;
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.cyber-floating-card strong {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cyber-panel {
+    padding: 34px 34px 30px;
+    border-radius: 32px;
+    background: linear-gradient(180deg, rgba(24, 48, 95, 0.94) 0%, rgba(18, 35, 70, 0.98) 100%);
+    border: 1px solid rgba(160, 210, 255, 0.24);
+    box-shadow: 0 28px 70px rgba(7, 16, 36, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+}
+
+.cyber-panel-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(125, 184, 255, 0.12);
+}
+
+.cyber-panel-header .status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #3cff88;
+    box-shadow: 0 0 16px rgba(60, 255, 136, 0.85);
+}
+
+.cyber-panel-header .status-text {
+    color: #d7e8ff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.cyber-core {
+    position: relative;
+    width: 196px;
+    height: 196px;
+    margin: 10px auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cyber-core-ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(145, 220, 255, 0.28);
+    box-shadow: 0 0 26px rgba(88, 184, 255, 0.12);
+}
+
+.cyber-core-ring::before {
+    content: "";
+    position: absolute;
+    inset: 14px;
+    border-radius: 50%;
+    border: 1px dashed rgba(145, 220, 255, 0.18);
+}
+
+.cyber-core-ring-two {
+    inset: 20px;
+    border-color: rgba(145, 220, 255, 0.18);
+}
+
+.cyber-core-center {
+    position: relative;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    background: radial-gradient(circle at top, rgba(145, 220, 255, 0.45), rgba(34, 66, 121, 0.98));
+    border: 1px solid rgba(160, 210, 255, 0.32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 34px rgba(84, 186, 255, 0.24);
+}
+
+.cyber-core-center i {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.cyber-core-center span {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.cyber-metric-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.cyber-metric-item {
+    padding: 24px 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(160, 210, 255, 0.16);
+}
+
+.cyber-metric-item .metric-value {
+    color: #7ddcff;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+
+.cyber-metric-item .metric-label {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+}
+
+.cyber-highlight {
+    margin-top: 26px;
+    padding: 24px 22px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(34, 66, 121, 0.92), rgba(18, 35, 70, 0.95));
+    border: 1px solid rgba(160, 210, 255, 0.18);
+    box-shadow: 0 14px 34px rgba(7, 16, 36, 0.24);
+}
+
+.cyber-highlight .highlight-label {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.cyber-highlight .highlight-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cyber-highlight .highlight-tags span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    color: #d8ecff;
+    background: rgba(125, 184, 255, 0.08);
+    border: 1px solid rgba(125, 184, 255, 0.14);
+    font-size: 13px;
+}
+
+@media (max-width: 991px) {
+    .cyber-security-section {
+        padding: 90px 0;
+    }
+
+    .cyber-shell {
+        padding: 40px 28px;
+    }
+
+    .cyber-panel {
+        margin-top: 40px;
+    }
+
+    .cyber-floating-top,
+    .cyber-floating-bottom {
+        position: static;
+        margin-bottom: 18px;
+    }
+
+    .cyber-security-section .sec-title .title {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 575px) {
+    .cyber-shell {
+        padding: 34px 20px;
+        border-radius: 24px;
+    }
+
+    .cyber-panel {
+        padding: 24px;
+        border-radius: 22px;
+    }
+
+    .cyber-inline-stats,
+    .cyber-metric-box {
+        grid-template-columns: 1fr;
+    }
+
+    .cyber-feature-item {
+        padding: 18px;
+    }
+
+    .cyber-security-section .sec-title .title {
+        font-size: 34px;
+    }
+}
+
+/* ============================================
+   Global Palette Refresh - #122346
+   ============================================ */
+.page-wrapper,
+.marquee-section,
+.faq-section-two,
+.contact-section,
+.cta-section,
+.footer-style-one {
+    background-color: #122346;
+}
+
+.faq-section-two .outer-box,
+.contact-section .outer-box,
+.cta-section .outer-box,
+.footer-style-one .outer-box {
+    background: linear-gradient(135deg, #122346 0%, #18305f 50%, #0f1d3b 100%);
+}
+
+.faq-section-two .outer-box .acc-btn,
+.faq-section-two .outer-box .acc-content .content,
+.contact-section .content-column .content-box .inner-box,
+.contact-section .form-column .form-box .inner-box,
+.footer-style-one .outer-box .footer-column .contact-widget .info,
+.footer-style-one .outer-box .footer-column .about-widget .form-clt input {
+    background-color: #19305e;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.faq-section-two .outer-box .sec-title .title,
+.contact-section .sec-title .title,
+.cta-section .outer-box .content-box .inner-box .title,
+.footer-style-one .outer-box .footer-column .widget-title,
+.footer-style-one .outer-box .footer-bottom .inner-container p,
+.footer-style-one .outer-box .footer-column .links-widget .user-links li a,
+.footer-style-one .outer-box .footer-column .contact-widget .info span {
+    color: #ffffff;
+}
+
+.faq-section-two .outer-box .accordion .acc-btn,
+.faq-section-two .outer-box .accordion .acc-content .content .text,
+.contact-section .sec-title .text,
+.contact-section .content-column .content-box .inner-box .info-box .info .content .text,
+.contact-section .form-column .form-box .inner-box .form-clt label,
+.contact-section .form-column .form-box .inner-box .form-clt input,
+.contact-section .form-column .form-box .inner-box .form-clt select,
+.contact-section .form-column .form-box .inner-box .form-clt textarea,
+.footer-style-one .outer-box .footer-column .about-widget .text,
+.footer-style-one .outer-box .footer-bottom .inner-container .social-icon li a {
+    color: #c9d7f0;
+}
+
+.contact-section .form-column .form-box .inner-box .form-clt input,
+.contact-section .form-column .form-box .inner-box .form-clt select,
+.contact-section .form-column .form-box .inner-box .form-clt textarea {
+    background-color: #224279;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-section .form-column .form-box .inner-box .form-clt input::placeholder,
+.contact-section .form-column .form-box .inner-box .form-clt select::placeholder,
+.contact-section .form-column .form-box .inner-box .form-clt textarea::placeholder {
+    color: #dbe6ff;
 }
