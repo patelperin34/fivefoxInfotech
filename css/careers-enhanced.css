@@ -1,0 +1,468 @@
+/* ══════════════════════════════════════
+   Careers Page – Premium UI Enhancement
+══════════════════════════════════════ */
+
+/* ── Animated Background Particles ── */
+.car-particles {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.car-particle {
+    position: absolute;
+    width: 5px; height: 5px;
+    background: rgba(168, 85, 247, 0.4);
+    border-radius: 50%;
+    animation: car-float-up 9s ease-in-out infinite;
+}
+
+.car-particle:nth-child(1) { left: 12%; animation-delay: 0s; animation-duration: 10s; }
+.car-particle:nth-child(2) { left: 28%; animation-delay: 1.5s; animation-duration: 8s; width: 3px; height: 3px; background: rgba(55, 146, 255, 0.4); }
+.car-particle:nth-child(3) { left: 45%; animation-delay: 3s; animation-duration: 11s; }
+.car-particle:nth-child(4) { left: 60%; animation-delay: 0.5s; animation-duration: 9s; width: 6px; height: 6px; }
+.car-particle:nth-child(5) { left: 75%; animation-delay: 2s; animation-duration: 12s; background: rgba(16, 185, 129, 0.3); }
+.car-particle:nth-child(6) { left: 88%; animation-delay: 4s; animation-duration: 8.5s; width: 4px; height: 4px; }
+.car-particle:nth-child(7) { left: 52%; animation-delay: 1s; animation-duration: 10.5s; }
+.car-particle:nth-child(8) { left: 18%; animation-delay: 3.5s; animation-duration: 9.5s; width: 7px; height: 7px; background: rgba(55, 146, 255, 0.3); }
+
+@keyframes car-float-up {
+    0% { transform: translateY(100vh) scale(0); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 0.6; }
+    100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+}
+
+/* ── Glowing Orbs ── */
+.car-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    pointer-events: none;
+    z-index: 0;
+}
+.car-orb-1 {
+    width: 550px; height: 550px;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.1) 0%, transparent 70%);
+    top: -200px; left: -200px;
+    animation: car-orb-drift 22s ease-in-out infinite alternate;
+}
+.car-orb-2 {
+    width: 450px; height: 450px;
+    background: radial-gradient(circle, rgba(55, 146, 255, 0.08) 0%, transparent 70%);
+    bottom: -150px; right: -150px;
+    animation: car-orb-drift 26s ease-in-out infinite alternate-reverse;
+}
+.car-orb-3 {
+    width: 350px; height: 350px;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.05) 0%, transparent 70%);
+    top: 40%; right: 15%;
+    animation: car-orb-drift 19s ease-in-out infinite alternate;
+}
+
+@keyframes car-orb-drift {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(50px, -40px) scale(1.1); }
+    100% { transform: translate(-30px, 30px) scale(0.95); }
+}
+
+/* ── Section Overrides ── */
+.sv-section.car-enhanced {
+    background: linear-gradient(180deg, #060e1f 0%, #0a1628 40%, #0d1f3c 70%, #050d1d 100%);
+    padding: 110px 0 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Grid pattern overlay */
+.car-grid-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image:
+        linear-gradient(rgba(168, 85, 247, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(168, 85, 247, 0.03) 1px, transparent 1px);
+    background-size: 70px 70px;
+    pointer-events: none;
+    z-index: 0;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, #000 30%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, #000 30%, transparent 100%);
+}
+
+/* ── Enhanced Section Header ── */
+.car-section-head {
+    text-align: center;
+    margin-bottom: 75px;
+    position: relative;
+    z-index: 2;
+}
+
+.car-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 24px;
+    background: rgba(168, 85, 247, 0.06);
+    border: 1px solid rgba(168, 85, 247, 0.15);
+    border-radius: 100px;
+    color: #a855f7;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.car-badge::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.1), transparent);
+    animation: car-shimmer 3.5s ease-in-out infinite;
+}
+
+@keyframes car-shimmer {
+    0% { left: -100%; }
+    100% { left: 200%; }
+}
+
+.car-badge-dot {
+    width: 8px; height: 8px;
+    background: #a855f7;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.car-badge-dot::after {
+    content: '';
+    position: absolute;
+    top: -3px; left: -3px;
+    width: 14px; height: 14px;
+    background: rgba(168, 85, 247, 0.3);
+    border-radius: 50%;
+    animation: car-pulse 2s ease-in-out infinite;
+}
+
+@keyframes car-pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.5); opacity: 0; }
+}
+
+.car-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(34px, 5vw, 56px);
+    font-weight: 800;
+    color: #eaf1ff;
+    letter-spacing: -1.2px;
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.car-title span {
+    background: linear-gradient(135deg, #a855f7 0%, #d8b4fe 50%, #3792ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% 200%;
+    animation: car-gradient-shift 4.5s ease-in-out infinite alternate;
+}
+
+@keyframes car-gradient-shift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.car-subtitle {
+    color: rgba(159, 176, 209, 0.7);
+    font-size: 17px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.car-section-head::after {
+    content: '';
+    display: block;
+    width: 90px; height: 3px;
+    background: linear-gradient(90deg, #a855f7, #3792ff);
+    border-radius: 3px;
+    margin: 32px auto 0;
+    opacity: 0.7;
+}
+
+/* ── Enhanced Cards (Culture/Why Work With Us) ── */
+.car-culture-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 26px;
+    padding: 45px 30px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.45s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.car-culture-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 26px;
+    padding: 2px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.5;
+    transition: opacity 0.4s ease;
+}
+
+.car-culture-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.4),
+        0 0 40px var(--car-glow, rgba(168, 85, 247, 0.05));
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.car-culture-card:hover::before {
+    opacity: 1;
+    background: linear-gradient(135deg, var(--car-color, #a855f7), transparent);
+}
+
+.car-culture-icon {
+    width: 80px; height: 80px;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: var(--car-color, #a855f7);
+    margin-bottom: 28px;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+}
+
+.car-culture-icon::after {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border-radius: 50%;
+    background: var(--car-color, #a855f7);
+    opacity: 0;
+    filter: blur(20px);
+    z-index: -1;
+    transition: opacity 0.4s ease;
+}
+
+.car-culture-card:hover .car-culture-icon {
+    transform: scale(1.15);
+    color: #fff;
+}
+
+.car-culture-card:hover .car-culture-icon::after {
+    opacity: 0.4;
+}
+
+.car-culture-card h4 {
+    color: #eaf1ff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-family: 'Outfit', sans-serif;
+    transition: color 0.3s ease;
+    line-height: 1.4;
+}
+
+.car-culture-card p {
+    color: rgba(159, 176, 209, 0.7);
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* ── Enhanced Cards (Open Positions) ── */
+.car-job-card {
+    background: rgba(10, 22, 40, 0.6);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(55, 146, 255, 0.15);
+    border-radius: 20px;
+    padding: 35px 30px;
+    height: 100%;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-job-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--car-color, #3792ff), transparent);
+    border-radius: 20px 20px 0 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.car-job-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--car-color, #3792ff);
+    background: rgba(15, 30, 55, 0.8);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px var(--car-glow, rgba(55, 146, 255, 0.1));
+}
+
+.car-job-card:hover::before {
+    transform: scaleX(1);
+}
+
+.car-job-icon {
+    width: 60px; height: 60px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: var(--car-color, #3792ff);
+    margin-bottom: 24px;
+    transition: all 0.4s ease;
+}
+
+.car-job-card:hover .car-job-icon {
+    background: var(--car-color, #3792ff);
+    color: #fff;
+    border-color: var(--car-color, #3792ff);
+    box-shadow: 0 10px 25px var(--car-glow, rgba(55, 146, 255, 0.3));
+    transform: rotate(5deg);
+}
+
+.car-job-card h4 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.car-job-card p {
+    color: rgba(159, 176, 209, 0.75);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.car-job-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.car-job-tag {
+    font-size: 12px;
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 30px;
+    color: #c8d4e9;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.car-job-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    color: #eaf1ff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.car-job-link i {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    color: var(--car-color, #3792ff);
+}
+
+.car-job-card:hover .car-job-link {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.car-job-link:hover {
+    background: var(--car-color, #3792ff) !important;
+    color: #fff !important;
+    border-color: var(--car-color, #3792ff) !important;
+}
+
+.car-job-link:hover i {
+    transform: translateX(5px);
+    color: #fff;
+}
+
+
+/* ── Scroll Reveal Animations ── */
+.car-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.car-reveal.car-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.car-reveal-delay-1 { transition-delay: 0.1s; }
+.car-reveal-delay-2 { transition-delay: 0.2s; }
+.car-reveal-delay-3 { transition-delay: 0.3s; }
+.car-reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ── Tilt/3D perspective on cards ── */
+.car-card-wrap {
+    perspective: 1000px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 991px) {
+    .sv-section.car-enhanced { padding: 80px 0 90px; }
+    .car-section-head { margin-bottom: 50px; }
+}
+
+@media (max-width: 767px) {
+    .sv-section.car-enhanced { padding: 60px 0 70px; }
+    .car-culture-card, .car-job-card { padding: 30px 20px; }
+    .car-culture-icon { width: 60px; height: 60px; font-size: 26px; margin-bottom: 20px; }
+    .car-job-icon { width: 50px; height: 50px; font-size: 22px; margin-bottom: 20px; }
+    .car-orb-1 { width: 350px; height: 350px; }
+    .car-orb-2 { width: 300px; height: 300px; }
+}

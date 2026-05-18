@@ -1,0 +1,596 @@
+/* ══════════════════════════════════════
+   Solutions Page – Premium UI Enhancement
+══════════════════════════════════════ */
+
+/* ── Animated Background Particles ── */
+.sol-particles {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.sol-particle {
+    position: absolute;
+    width: 4px; height: 4px;
+    background: rgba(55, 146, 255, 0.4);
+    border-radius: 50%;
+    animation: sol-float-up 8s ease-in-out infinite;
+}
+
+.sol-particle:nth-child(1) { left: 10%; animation-delay: 0s; animation-duration: 9s; }
+.sol-particle:nth-child(2) { left: 25%; animation-delay: 1.5s; animation-duration: 7s; width: 3px; height: 3px; }
+.sol-particle:nth-child(3) { left: 40%; animation-delay: 3s; animation-duration: 10s; }
+.sol-particle:nth-child(4) { left: 55%; animation-delay: 0.5s; animation-duration: 8s; width: 5px; height: 5px; }
+.sol-particle:nth-child(5) { left: 70%; animation-delay: 2s; animation-duration: 11s; }
+.sol-particle:nth-child(6) { left: 85%; animation-delay: 4s; animation-duration: 7.5s; width: 3px; height: 3px; }
+.sol-particle:nth-child(7) { left: 50%; animation-delay: 1s; animation-duration: 9.5s; }
+.sol-particle:nth-child(8) { left: 15%; animation-delay: 3.5s; animation-duration: 8.5s; width: 6px; height: 6px; background: rgba(168, 85, 247, 0.3); }
+
+@keyframes sol-float-up {
+    0% { transform: translateY(100vh) scale(0); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 0.6; }
+    100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+}
+
+/* ── Glowing Orbs ── */
+.sol-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    pointer-events: none;
+    z-index: 0;
+}
+.sol-orb-1 {
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(55, 146, 255, 0.12) 0%, transparent 70%);
+    top: -200px; left: -150px;
+    animation: sol-orb-drift 20s ease-in-out infinite alternate;
+}
+.sol-orb-2 {
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.08) 0%, transparent 70%);
+    bottom: -100px; right: -100px;
+    animation: sol-orb-drift 25s ease-in-out infinite alternate-reverse;
+}
+.sol-orb-3 {
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.06) 0%, transparent 70%);
+    top: 50%; right: 20%;
+    animation: sol-orb-drift 18s ease-in-out infinite alternate;
+}
+
+@keyframes sol-orb-drift {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(40px, -30px) scale(1.15); }
+    100% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+/* ── Section Overrides ── */
+.sv-section.sol-enhanced {
+    background: linear-gradient(180deg, #050d1d 0%, #0a1628 40%, #0d1f3c 70%, #060e1f 100%);
+    padding: 110px 0 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Grid pattern overlay */
+.sol-grid-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image:
+        linear-gradient(rgba(55, 146, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(55, 146, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 30%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 30%, transparent 100%);
+}
+
+/* ── Enhanced Section Header ── */
+.sol-section-head {
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+    z-index: 2;
+}
+
+.sol-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 24px;
+    background: rgba(55, 146, 255, 0.06);
+    border: 1px solid rgba(55, 146, 255, 0.15);
+    border-radius: 100px;
+    color: #3792ff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sol-badge::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(55, 146, 255, 0.1), transparent);
+    animation: sol-shimmer 3s ease-in-out infinite;
+}
+
+@keyframes sol-shimmer {
+    0% { left: -100%; }
+    100% { left: 200%; }
+}
+
+.sol-badge-dot {
+    width: 8px; height: 8px;
+    background: #3792ff;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.sol-badge-dot::after {
+    content: '';
+    position: absolute;
+    top: -3px; left: -3px;
+    width: 14px; height: 14px;
+    background: rgba(55, 146, 255, 0.3);
+    border-radius: 50%;
+    animation: sol-pulse 2s ease-in-out infinite;
+}
+
+@keyframes sol-pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.5); opacity: 0; }
+}
+
+.sol-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    color: #eaf1ff;
+    letter-spacing: -1px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.sol-title span {
+    background: linear-gradient(135deg, #3792ff 0%, #60b0ff 50%, #a855f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% 200%;
+    animation: sol-gradient-shift 4s ease-in-out infinite alternate;
+}
+
+@keyframes sol-gradient-shift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.sol-subtitle {
+    color: rgba(159, 176, 209, 0.7);
+    font-size: 17px;
+    max-width: 580px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Decorative line under title */
+.sol-section-head::after {
+    content: '';
+    display: block;
+    width: 80px; height: 3px;
+    background: linear-gradient(90deg, #3792ff, #a855f7);
+    border-radius: 3px;
+    margin: 28px auto 0;
+    opacity: 0.7;
+}
+
+/* ── Enhanced Service Cards ── */
+.sol-card {
+    background: rgba(255, 255, 255, 0.025);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(55, 146, 255, 0.1);
+    border-radius: 24px;
+    padding: 40px 32px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.45s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top gradient bar */
+.sol-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--sol-color, #3792ff), transparent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Glow effect behind card */
+.sol-card::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 120%; height: 120%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse, var(--sol-glow, rgba(55, 146, 255, 0.04)) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.sol-card:hover {
+    transform: translateY(-12px);
+    border-color: rgba(55, 146, 255, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow:
+        0 30px 70px rgba(55, 146, 255, 0.12),
+        0 0 40px rgba(55, 146, 255, 0.03);
+}
+
+.sol-card:hover::before {
+    transform: scaleX(1);
+}
+
+.sol-card:hover::after {
+    opacity: 1;
+}
+
+/* Icon */
+.sol-card-icon {
+    width: 64px; height: 64px;
+    background: rgba(55, 146, 255, 0.08);
+    border: 1px solid rgba(55, 146, 255, 0.18);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: var(--sol-color, #3792ff);
+    margin-bottom: 24px;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+}
+
+.sol-card-icon::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, var(--sol-color, #3792ff), transparent);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.4s ease;
+    filter: blur(8px);
+}
+
+.sol-card:hover .sol-card-icon {
+    transform: scale(1.1) rotate(-5deg);
+    background: rgba(55, 146, 255, 0.15);
+    border-color: rgba(55, 146, 255, 0.35);
+}
+
+.sol-card:hover .sol-card-icon::after {
+    opacity: 0.4;
+}
+
+/* Number */
+.sol-card-num {
+    position: absolute;
+    top: 24px; right: 24px;
+    font-size: 54px;
+    font-weight: 800;
+    font-family: 'Outfit', sans-serif;
+    line-height: 1;
+    letter-spacing: -3px;
+    background: linear-gradient(180deg, rgba(55, 146, 255, 0.08) 0%, rgba(55, 146, 255, 0.02) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.4s ease;
+}
+
+.sol-card:hover .sol-card-num {
+    background: linear-gradient(180deg, rgba(55, 146, 255, 0.15) 0%, rgba(55, 146, 255, 0.04) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Content */
+.sol-card h4 {
+    color: #eaf1ff;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    font-family: 'Outfit', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.sol-card:hover h4 {
+    color: #fff;
+}
+
+.sol-card > p {
+    color: rgba(159, 176, 209, 0.72);
+    font-size: 15px;
+    line-height: 1.75;
+    margin-bottom: 22px;
+}
+
+/* Feature list */
+.sol-card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px;
+}
+
+.sol-card-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgba(159, 176, 209, 0.8);
+    font-size: 14px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(55, 146, 255, 0.06);
+    transition: color 0.3s, padding-left 0.3s;
+}
+
+.sol-card:hover .sol-card-list li {
+    color: rgba(200, 215, 240, 0.9);
+}
+
+.sol-card-list li:last-child { border-bottom: none; }
+
+.sol-card-list li i {
+    color: var(--sol-color, #3792ff);
+    font-size: 10px;
+    width: 20px; height: 20px;
+    background: rgba(55, 146, 255, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.sol-card:hover .sol-card-list li i {
+    background: rgba(55, 146, 255, 0.15);
+}
+
+/* CTA Link */
+.sol-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--sol-color, #3792ff);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-top: auto;
+    padding: 12px 24px;
+    border: 1px solid rgba(55, 146, 255, 0.15);
+    border-radius: 12px;
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.sol-card-link::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(55, 146, 255, 0.08), transparent);
+    transition: left 0.5s ease;
+}
+
+.sol-card-link:hover {
+    color: #fff;
+    background: linear-gradient(135deg, var(--sol-color, #3792ff), rgba(55, 146, 255, 0.8));
+    border-color: transparent;
+    gap: 14px;
+    box-shadow: 0 8px 25px rgba(55, 146, 255, 0.25);
+}
+
+.sol-card-link:hover::before { left: 100%; }
+
+.sol-card-link i {
+    font-size: 11px;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.sol-card-link:hover i {
+    transform: translateX(4px);
+}
+
+/* ── Stats Strip ── */
+.sol-stats-strip {
+    background: rgba(255, 255, 255, 0.02);
+    border-top: 1px solid rgba(55, 146, 255, 0.08);
+    border-bottom: 1px solid rgba(55, 146, 255, 0.08);
+    padding: 50px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.sol-stat-item {
+    text-align: center;
+    padding: 20px 16px;
+    position: relative;
+}
+
+.sol-stat-item::after {
+    content: '';
+    position: absolute;
+    top: 20%; right: 0;
+    height: 60%;
+    width: 1px;
+    background: rgba(55, 146, 255, 0.15);
+}
+
+.sol-stat-item:last-child::after { display: none; }
+
+.sol-stat-num {
+    font-family: 'Outfit', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #3792ff, #60b0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.sol-stat-lbl {
+    font-size: 13px;
+    color: rgba(159, 176, 209, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* ── CTA Banner ── */
+.sol-cta {
+    background: linear-gradient(135deg, #0d1f3c 0%, #0a1628 100%);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.sol-cta-inner {
+    background: linear-gradient(135deg, rgba(55, 146, 255, 0.08), rgba(168, 85, 247, 0.05));
+    border: 1px solid rgba(55, 146, 255, 0.15);
+    border-radius: 28px;
+    padding: 60px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sol-cta-inner::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: conic-gradient(from 0deg, transparent, rgba(55, 146, 255, 0.03), transparent, rgba(168, 85, 247, 0.02), transparent);
+    animation: sol-cta-rotate 15s linear infinite;
+}
+
+@keyframes sol-cta-rotate {
+    100% { transform: rotate(360deg); }
+}
+
+.sol-cta-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    color: #eaf1ff;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.sol-cta-text {
+    color: rgba(159, 176, 209, 0.7);
+    font-size: 16px;
+    max-width: 540px;
+    margin: 0 auto 32px;
+    line-height: 1.7;
+    position: relative;
+}
+
+.sol-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 36px;
+    background: linear-gradient(135deg, #3792ff, #1a6fd4);
+    color: #fff;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.35s ease;
+    box-shadow: 0 8px 30px rgba(55, 146, 255, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.sol-cta-btn:hover {
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 16px 45px rgba(55, 146, 255, 0.4);
+}
+
+.sol-cta-btn i {
+    transition: transform 0.3s;
+}
+
+.sol-cta-btn:hover i {
+    transform: translateX(4px);
+}
+
+/* ── Scroll Reveal Animations ── */
+.sol-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.sol-reveal.sol-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sol-reveal-delay-1 { transition-delay: 0.1s; }
+.sol-reveal-delay-2 { transition-delay: 0.2s; }
+.sol-reveal-delay-3 { transition-delay: 0.3s; }
+.sol-reveal-delay-4 { transition-delay: 0.4s; }
+.sol-reveal-delay-5 { transition-delay: 0.5s; }
+
+/* ── Tilt/3D perspective on cards ── */
+.sol-card-wrap {
+    perspective: 1000px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 991px) {
+    .sv-section.sol-enhanced { padding: 80px 0 90px; }
+    .sol-section-head { margin-bottom: 50px; }
+    .sol-stat-item::after { display: none; }
+}
+
+@media (max-width: 767px) {
+    .sv-section.sol-enhanced { padding: 60px 0 70px; }
+    .sol-card { padding: 32px 24px; border-radius: 20px; }
+    .sol-card-icon { width: 52px; height: 52px; font-size: 22px; }
+    .sol-card-num { font-size: 40px; }
+    .sol-cta-inner { padding: 40px 24px; }
+    .sol-orb-1 { width: 300px; height: 300px; }
+    .sol-orb-2 { width: 250px; height: 250px; }
+}
