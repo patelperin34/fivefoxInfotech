@@ -284,7 +284,7 @@
             <div class="outer-box">
                 <div class="outer-container"> 
                     <div class="row align-items-center">
-                        <div class="banner-content col-lg-6">
+                        <div class="banner-content col-lg-6 order-2 order-lg-1">
                             <div class="inner-content">
                                 <div class="sub-title wow fadeInUp" data-wow-delay="200ms">Vision. Innovation. Growth.</div>
                                 <div class="h1 title wow fadeInUp" data-wow-delay="400ms">Empowering Businesses with Scalable Digital Solutions</div>
@@ -294,7 +294,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="image-column col-lg-6">
+                        <div class="image-column col-lg-6 order-1 order-lg-2">
                             <div class="inner-column wow fadeInUp" data-wow-delay="600ms">
                               <canvas id="canvas"></canvas>
                             </div>
@@ -1826,18 +1826,25 @@ const ctx = canvas.getContext("2d");
 
 let particles = [];
 
-function resizeCanvas(){
+function getCanvasSize() {
+    const w = window.innerWidth;
+    if (w <= 480) return 180;
+    if (w <= 768) return 220;
+    return 400;
+}
 
-    canvas.width = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
+function resizeCanvas(){
+    const s = getCanvasSize();
+    canvas.style.width  = s + "px";
+    canvas.style.height = s + "px";
+    canvas.width  = s;
+    canvas.height = s;
 }
 
 resizeCanvas();
 
 window.addEventListener("resize",()=>{
-
     resizeCanvas();
-
     init();
 });
 
@@ -1848,140 +1855,98 @@ const mouse = {
 };
 
 canvas.addEventListener("mousemove",(e)=>{
-
     const rect = canvas.getBoundingClientRect();
-
     mouse.x = e.clientX - rect.left;
     mouse.y = e.clientY - rect.top;
 });
 
 canvas.addEventListener("mouseleave",()=>{
-
     mouse.x = null;
     mouse.y = null;
 });
 
 class Particle{
-
     constructor(x,y,color){
-
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-
         this.baseX = x;
         this.baseY = y;
-
         this.size = 2;
-
         this.color = color;
-
         this.density = Math.random() * 10 + 2;
     }
 
     draw(){
-
         ctx.fillStyle = this.color;
-
         ctx.beginPath();
         ctx.arc(this.x,this.y,this.size,0,Math.PI * 2);
         ctx.fill();
     }
 
     update(){
-
         if(mouse.x && mouse.y){
-
             let dx = mouse.x - this.x;
             let dy = mouse.y - this.y;
-
             let distance = Math.sqrt(dx * dx + dy * dy);
-
             if(distance < mouse.radius){
-
                 let force = (mouse.radius - distance) / mouse.radius;
-
                 let directionX = dx / distance;
                 let directionY = dy / distance;
-
                 this.x -= directionX * force * this.density;
                 this.y -= directionY * force * this.density;
             }
         }
-
         this.x += (this.baseX - this.x) * 0.05;
         this.y += (this.baseY - this.y) * 0.05;
-
         this.draw();
     }
 }
 
 const image = new Image();
-
 image.src = "./images/Fivefox-Icon-W.png";
-
 image.onload = ()=>{
-
     init();
-
     animate();
 };
 
 function init(){
-
     particles = [];
 
     const tempCanvas = document.createElement("canvas");
     const tempCtx = tempCanvas.getContext("2d");
 
-    const size = 260;
-
-    tempCanvas.width = size;
+    // scale the logo to fit inside the canvas with padding
+    const size = Math.round(canvas.width * 0.75);
+    tempCanvas.width  = size;
     tempCanvas.height = size;
+    tempCtx.drawImage(image, 0, 0, size, size);
 
-    tempCtx.drawImage(image,0,0,size,size);
-
-    const imageData = tempCtx.getImageData(0,0,size,size);
-
+    const imageData = tempCtx.getImageData(0, 0, size, size);
     const data = imageData.data;
 
-    for(let y = 0; y < size; y += 4){
+    const step = Math.max(2, Math.round(size / 65)); // fewer dots on small screens
 
-        for(let x = 0; x < size; x += 4){
-
+    for(let y = 0; y < size; y += step){
+        for(let x = 0; x < size; x += step){
             const index = (y * size + x) * 4;
-
             const alpha = data[index + 3];
-
             if(alpha > 128){
-
-                const red = data[index];
+                const red   = data[index];
                 const green = data[index + 1];
-                const blue = data[index + 2];
-
-                const posX = x + canvas.width / 2 - size / 2;
-                const posY = y + canvas.height / 2 - size / 2;
-
-                particles.push(
-                    new Particle(
-                        posX,
-                        posY,
-                        `rgb(${red},${green},${blue})`
-                    )
-                );
+                const blue  = data[index + 2];
+                const posX  = x + canvas.width  / 2 - size / 2;
+                const posY  = y + canvas.height / 2 - size / 2;
+                particles.push(new Particle(posX, posY, `rgb(${red},${green},${blue})`));
             }
         }
     }
 }
 
 function animate(){
-
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     for(let i = 0; i < particles.length; i++){
-
         particles[i].update();
     }
-
     requestAnimationFrame(animate);
 }
 
