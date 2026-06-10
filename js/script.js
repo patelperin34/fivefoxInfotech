@@ -416,10 +416,10 @@ var THEMEMASCOT = {};
             })
             tl.from(itemSplitted.chars, {
                 duration: 0.5,
-                delay: 0.5,
+                delay: 0,
                 x: 100,
                 autoAlpha: 0,
-                stagger: 0.05
+                 stagger: 0.02
             });
         });
     }

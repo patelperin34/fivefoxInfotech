@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Android App Development - FiveFox Infotech</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/Fivefox-Icon-W.png" type="image/x-icon" />
+    <link rel="icon" href="images/Fivefox-Icon-W.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /></head>
+
+<body>
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="preloader-loaded light">
+                <div class="text-preloader-outer">
+                    <div class="text-preloading">
+                        <span class="text-split" data-text="F">F</span>
+                        <span class="text-split" data-text="I">I</span>
+                        <span class="text-split" data-text="V">V</span>
+                        <span class="text-split" data-text="E">E</span>
+                        <span class="text-split" data-text=" ">&nbsp;</span>
+                        <span class="text-split" data-text="F">F</span>
+                        <span class="text-split" data-text="O">O</span>
+                        <span class="text-split" data-text="X">X</span>
+                    </div>
+                </div>
+                <div class="preloader-slide slide-left"></div>
+                <div class="preloader-slide slide-right"></div>
+            </div>
+        </div>
+
+        <!-- Back-to-top -->
+        <div class="back-to-top-wrapper">
+            <button id="back_to_top" type="button" class="back-to-top-btn">
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Header -->
+        <header class="main-header header-style-one">
+            <div class="outer-box">
+                <div class="header-lower anim-fade-move" data-delay="0.25">
+                    <div class="inner-container">
+                        <div class="left-box">
+                            <div class="main-box">
+                                <div class="logo-box">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-outer">
+                                <nav class="nav main-menu">
+                                    <ul class="navigation">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li class="has-mega-menu current">
+                                            <a href="services.html">Services</a>
+                                            <div class="mega-menu">
+                                                <div class="mega-menu-inner">
+                                                    <div class="mega-col">
+                                                        <div class="mega-col-title">Magento Service</div>
+                                                        <ul>
+                                                            <li><a href="magento-support-maintenance.html">Magento 2 Support &amp; Maintenance</a></li>
+                                                            <li><a href="magento-development.html">Magento 2 Development</a></li>
+                                                            <li><a href="services-page.html">Magento 2 Upgrade</a></li>
+                                                            <li><a href="services-page.html">Magento 2 Migration</a></li>
+                                                            <li><a href="magento-pwa.html">Magento 2 PWA</a></li>
+                                                            <li><a href="magento-integration.html">Magento 2 Integration</a></li>
+                                                            <li><a href="magento-extension.html">Magento 2 Extension</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mega-col">
+                                                        <div class="mega-col-title">Ecommerce Development</div>
+                                                        <ul>
+                                                            <li><a href="magento-development.html">Magento Development</a></li>
+                                                            <li><a href="shopify-development.html">Shopify Development</a></li>
+                                                            <li><a href="woocommerce-development.html">WooCommerce Development</a></li>
+                                                            <li><a href="shopware-development.html">Shopware Development</a></li>
+                                                            <li><a href="hyva-theme-development.html">Hyv Theme Development</a></li>
+                                                        </ul>
+                                                        <div class="mega-col-title mega-col-title-sub">Shopware Service</div>
+                                                        <ul>
+                                                            <li><a href="shopware-plugin.html">Shopware Plugin</a></li>
+                                                            <li><a href="shopware-theme.html">Shopware Theme</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mega-col">
+                                                        <div class="mega-col-title">Mobile App Development</div>
+                                                        <ul>
+                                                            <li><a href="android-app-development.html">Android App Development</a></li>
+                                                            <li><a href="ios-app-development.html">iOS App Development</a></li>
+                                                            <li><a href="flutter-development.html">Flutter Development</a></li>
+                                                            <li><a href="react-native-app-development.html">React Native App Development</a></li>
+                                                        </ul>
+                                                        <div class="mega-col-title mega-col-title-sub">UI/UX Design</div>
+                                                        <ul>
+                                                            <li><a href="ui-ux-design.html">UI-UX Design</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mega-col">
+                                                        <div class="mega-col-title">Website Development</div>
+                                                        <ul>
+                                                            <li><a href="wordpress-development.html">WordPress Development</a></li>
+                                                            <li><a href="webflow-development.html">Webflow Development</a></li>
+                                                            <li><a href="services-page.html">Drupal Development</a></li>
+                                                        </ul>
+                                                        <div class="mega-col-title mega-col-title-sub">Backend Development</div>
+                                                        <ul>
+                                                            <li><a href="nodejs-development.html">NodeJS Development</a></li>
+                                                            <li><a href="php-development.html">PHP Development</a></li>
+                                                            <li><a href="laravel-development.html">Laravel Development</a></li>
+                                                        </ul>
+                                                        <div class="mega-col-title mega-col-title-sub">Frontend Development</div>
+                                                        <ul>
+                                                            <li><a href="angular-development.html">Angular Development</a></li>
+                                                            <li><a href="reactjs-development.html">ReactJS Development</a></li>
+                                                            <li><a href="vue-js-development.html">Vue JS Development</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mega-col mega-col-contact">
+                                                        <div class="mega-col-title">Get In Touch</div>
+                                                        <div class="mega-contact-item">
+                                                            <div class="mega-contact-icon mega-contact-icon-wa"><i class="fa-brands fa-whatsapp"></i></div>
+                                                            <div class="mega-contact-text">
+                                                                <span class="mega-contact-label">Sales</span>
+                                                                <a href="https://wa.me/919876543210">+91 9876543210</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mega-contact-item">
+                                                            <div class="mega-contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                                            <div class="mega-contact-text">
+                                                                <span class="mega-contact-label">Email Us</span>
+                                                                <a href="mailto:fivefoxinfotech@gmail.com">fivefoxinfotech@gmail.com</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="industries.html">Industries</a></li>
+                                        <li><a href="technologies.html">Technologies</a></li>
+                                        <li><a href="portfolio.html">Portfolio</a></li>
+                                        <li><a href="careers.html">Careers</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact-us.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="right-box">
+                            <a href="contact-us.html" class="theme-btn btn-style-two">Let's Talk</a>
+                            <div class="mobile-nav-toggler"><span></span><span></span><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu">
+                <div class="menu-backdrop"></div>
+                <nav class="menu-box">
+                    <div class="upper-box">
+                        <div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+                        <div class="close-btn"><i class="icon fa fa-times"></i></div>
+                    </div>
+                    <ul class="navigation clearfix"></ul>
+                    <ul class="contact-list-one">
+                        <li>
+                            <i class="icon fa-regular fa-envelope"></i>
+                            <span class="title">Send Email</span>
+                            <div class="text"><a href="mailto:fivefoxinfotech@gmail.com">fivefoxinfotech@gmail.com</a></div>
+                        </li>
+                    </ul>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="icon fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="icon fab fa-pinterest-p"></i></a></li>
+                        <li><a href="#"><i class="icon fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Header Search -->
+            <div class="search-popup">
+                <span class="search-back-drop"></span>
+                <button class="close-search"><span class="fa fa-times"></span></button>
+                <div class="search-inner">
+                    <form method="post" action="index.html">
+                        <div class="form-group">
+                            <input type="search" name="search-field" value="" placeholder="Search..." required="" />
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Sticky Header -->
+            <div class="sticky-header">
+                <div class="outer-box">
+                    <div class="inner-container">
+                        <div class="left-box">
+                            <div class="main-box">
+                                <div class="logo-box">
+                                    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo" /></a></div>
+                                </div>
+                            </div>
+                            <div class="nav-outer">
+                                <nav class="nav main-menu">
+                                    <ul class="navigation clearfix"></ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="right-box">
+                            <a href="contact-us.html" class="theme-btn btn-style-two">Let's Talk</a>
+                            <div class="mobile-nav-toggler"><span></span><span></span><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ── Hero Banner ── -->
+        <section class="mg-hero">
+            <div class="mg-hero-grid"></div>
+            <div class="auto-container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 mg-hero-inner wow fadeInLeft">
+                        <div class="mg-breadcrumb">
+                            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <a href="services-page.html">Services</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <span>Android App Development</span>
+                        </div>
+                        <div class="mg-hero-badge">
+                            <span class="mg-hero-badge-dot"></span> Magento Certified Developers
+                        </div>
+                        <h1 class="mg-hero-title">
+                            Android App <span>Development</span> Services
+                        </h1>
+                        <p class="mg-hero-sub">
+                            Build robust, scalable, and highly interactive Android applications tailored to meet your unique business objectives.
+                        </p>
+                        <div class="mg-hero-btns">
+                            <a href="contact-us.html" class="mg-btn-primary">Discuss Your Project <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#mg-services" class="mg-btn-outline">Our Expertise <i class="fa-solid fa-arrow-down"></i></a>
+                        </div>
+                        <div class="mg-hero-stats">
+                            <div class="mg-stat">
+                                <span class="mg-stat-num">150+</span>
+                                <span class="mg-stat-lbl">Stores Built</span>
+                            </div>
+                            <div class="mg-stat">
+                                <span class="mg-stat-num">10+</span>
+                                <span class="mg-stat-lbl">Years Experience</span>
+                            </div>
+                            <div class="mg-stat">
+                                <span class="mg-stat-num">100%</span>
+                                <span class="mg-stat-lbl">Custom Solutions</span>
+                            </div>
+                            <div class="mg-stat">
+                                <span class="mg-stat-num">2x</span>
+                                <span class="mg-stat-lbl">Faster Time-to-Market</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight">
+                        <div class="mg-hero-img">
+                            <div class="mg-hero-img-box">
+                                <div class="mg-icon-grid">
+                                    <div class="mg-icon-item">
+                                        <i class="fa-solid fa-store"></i>
+                                        <span>Custom Themes</span>
+                                    </div>
+                                    <div class="mg-icon-item">
+                                        <i class="fa-solid fa-puzzle-piece"></i>
+                                        <span>Extension Dev</span>
+                                    </div>
+                                    <div class="mg-icon-item">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                        <span>API Integrations</span>
+                                    </div>
+                                    <div class="mg-icon-item">
+                                        <i class="fa-solid fa-truck-fast"></i>
+                                        <span>Migration</span>
+                                    </div>
+                                    <div class="mg-icon-item">
+                                        <i class="fa-solid fa-rocket"></i>
+                                        <span>Performance</span>
+                                    </div>
+                                    <div class="mg-icon-item">
+                                        <i class="fa-solid fa-mobile-screen"></i>
+                                        <span>PWA Solutions</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Strip ── -->
+        <div class="mg-strip">
+            <div class="auto-container">
+                <div class="mg-strip-inner">
+
+                    <div class="mg-strip-item"><i class="fa-solid fa-circle-check"></i><span>Custom Android Apps</span></div>
+                    <div class="mg-strip-dot"></div>
+                    <div class="mg-strip-item"><i class="fa-solid fa-circle-check"></i><span>UI/UX Design</span></div>
+                    <div class="mg-strip-dot"></div>
+                    <div class="mg-strip-item"><i class="fa-solid fa-circle-check"></i><span>Kotlin & Java</span></div>
+                    <div class="mg-strip-dot"></div>
+                    <div class="mg-strip-item"><i class="fa-solid fa-circle-check"></i><span>Wearable Integration</span></div>
+                    <div class="mg-strip-dot"></div>
+                    <div class="mg-strip-item"><i class="fa-solid fa-circle-check"></i><span>App Testing</span></div>
+                    <div class="mg-strip-dot"></div>
+                    <div class="mg-strip-item"><i class="fa-solid fa-circle-check"></i><span>Play Store Submissions</span></div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Services Section ── -->
+        <section class="mg-section" id="mg-services">
+            <div class="auto-container">
+                <div class="mg-section-head wow fadeInUp">
+                    <div class="mg-label"><span class="mg-label-dot"></span> Our Expertise</div>
+                    <h2 class="mg-heading">Custom <span>Android Solutions</span></h2>
+                    <p class="mg-subtext">We engineer high-performance native Android applications that dominate the Google Play Store.</p>
+                </div>
+                <div class="row g-4 wow fadeInUp">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="mg-service-card">
+                            <div class="mg-sc-num">01</div>
+                            <div class="mg-sc-icon"><i class="fa-brands fa-android"></i></div>
+                            <h5>Custom Android App Dev</h5>
+                            <p>We build robust, scalable native applications from scratch using modern Kotlin and Java architectures.</p>
+                            <ul class="mg-sc-list">
+                                <li><i class="fa-solid fa-check"></i> Native development</li>
+                                <li><i class="fa-solid fa-check"></i> Advanced device features</li>
+                                <li><i class="fa-solid fa-check"></i> Secure architecture</li>
+                                <li><i class="fa-solid fa-check"></i> Hardware integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="mg-service-card">
+                            <div class="mg-sc-num">02</div>
+                            <div class="mg-sc-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                            <h5>UI/UX App Design</h5>
+                            <p>Crafting intuitive and fluid user experiences adhering strictly to Google's Material Design guidelines.</p>
+                            <ul class="mg-sc-list">
+                                <li><i class="fa-solid fa-check"></i> Material Design UI</li>
+                                <li><i class="fa-solid fa-check"></i> Intuitive user journeys</li>
+                                <li><i class="fa-solid fa-check"></i> Prototyping & wireframing</li>
+                                <li><i class="fa-solid fa-check"></i> High-fidelity mockups</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="mg-service-card">
+                            <div class="mg-sc-num">03</div>
+                            <div class="mg-sc-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                            <h5>Android App Migration</h5>
+                            <p>Seamlessly modernize and migrate your legacy applications to the latest Android SDKs and architecture.</p>
+                            <ul class="mg-sc-list">
+                                <li><i class="fa-solid fa-check"></i> Java to Kotlin migration</li>
+                                <li><i class="fa-solid fa-check"></i> Code refactoring</li>
+                                <li><i class="fa-solid fa-check"></i> Legacy API upgrades</li>
+                                <li><i class="fa-solid fa-check"></i> Database optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="mg-service-card">
+                            <div class="mg-sc-num">04</div>
+                            <div class="mg-sc-icon"><i class="fa-solid fa-building"></i></div>
+                            <h5>Enterprise Mobility</h5>
+                            <p>Develop secure, reliable Android applications tailored for large-scale enterprise workflows.</p>
+                            <ul class="mg-sc-list">
+                                <li><i class="fa-solid fa-check"></i> Internal communication apps</li>
+                                <li><i class="fa-solid fa-check"></i> Workflow automation</li>
+                                <li><i class="fa-solid fa-check"></i> High data security</li>
+                                <li><i class="fa-solid fa-check"></i> MDM integrations</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="mg-service-card">
+                            <div class="mg-sc-num">05</div>
+                            <div class="mg-sc-icon"><i class="fa-solid fa-watch"></i></div>
+                            <h5>IoT & Wearable Apps</h5>
+                            <p>Extend your app’s reach to Android wearables, smart TVs, and Internet of Things (IoT) devices.</p>
+                            <ul class="mg-sc-list">
+                                <li><i class="fa-solid fa-check"></i> Android TV apps</li>
+                                <li><i class="fa-solid fa-check"></i> Wear OS integration</li>
+                                <li><i class="fa-solid fa-check"></i> Bluetooth & BLE setups</li>
+                                <li><i class="fa-solid fa-check"></i> Smart home connections</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="mg-service-card">
+                            <div class="mg-sc-num">06</div>
+                            <div class="mg-sc-icon"><i class="fa-solid fa-vial"></i></div>
+                            <h5>QA & App Maintenance</h5>
+                            <p>We provide comprehensive bug-testing, crash analytics, and continuous updates post-launch.</p>
+                            <ul class="mg-sc-list">
+                                <li><i class="fa-solid fa-check"></i> Automated testing</li>
+                                <li><i class="fa-solid fa-check"></i> Security patching</li>
+                                <li><i class="fa-solid fa-check"></i> Crash analytics monitoring</li>
+                                <li><i class="fa-solid fa-check"></i> OS compatibility updates</li>
+                            </ul>
+                        </div>
+                    </div>
+
+</div>
+            </div>
+        </section>
+
+        <!-- ── Why Choose Us ── -->
+        <section class="mg-section mg-section-dark">
+            <div class="auto-container">
+                <div class="mg-section-head wow fadeInUp">
+                    <div class="mg-label"><span class="mg-label-dot"></span> Why FIVEFOX</div>
+                    <h2 class="mg-heading">Why Partner With <span>Us for Android?</span></h2>
+                    <p class="mg-subtext">We combine technical expertise, agile methodologies, and deep eCommerce knowledge to deliver outstanding results.</p>
+                </div>
+                <div class="row g-4 wow fadeInUp">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mg-why-card">
+                            <div class="mg-why-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <h6>Certified Developers</h6>
+                            <p>Our team holds official Magento certifications with extensive experience in delivering complex eCommerce projects.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mg-why-card">
+                            <div class="mg-why-icon"><i class="fa-solid fa-people-arrows"></i></div>
+                            <h6>Agile Methodology</h6>
+                            <p>We work in transparent, iterative sprints, ensuring you have complete visibility and control over the development process.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mg-why-card">
+                            <div class="mg-why-icon"><i class="fa-solid fa-check-double"></i></div>
+                            <h6>Quality Assurance</h6>
+                            <p>Rigorous automated and manual testing protocols ensure your store is secure, fast, and bug-free before going live.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mg-why-card">
+                            <div class="mg-why-icon"><i class="fa-solid fa-headset"></i></div>
+                            <h6>Post-Launch Support</h6>
+                            <p>We provide comprehensive maintenance and support services to keep your store running optimally long after launch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Process ── -->
+        <section class="mg-process">
+            <div class="auto-container">
+                <div class="mg-section-head wow fadeInUp">
+                    <div class="mg-label"><span class="mg-label-dot"></span> How We Work</div>
+                    <h2 class="mg-heading">Our Android App <span>Process</span></h2>
+                    <p class="mg-subtext">A streamlined, proven approach to bringing your Magento vision to life.</p>
+                </div>
+                <div class="mg-process-track wow fadeInUp">
+                    <div class="mg-process-step">
+                        <div class="mg-ps-num">STEP 01</div>
+                        <div class="mg-ps-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <h5>Discovery &amp; Strategy</h5>
+                        <p>We analyze your requirements and define the perfect architecture for your store.</p>
+                    </div>
+                    <div class="mg-process-arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+                    <div class="mg-process-step">
+                        <div class="mg-ps-num">STEP 02</div>
+                        <div class="mg-ps-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                        <h5>UI/UX Design</h5>
+                        <p>Our designers craft intuitive, conversion-focused wireframes and visual designs.</p>
+                    </div>
+                    <div class="mg-process-arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+                    <div class="mg-process-step">
+                        <div class="mg-ps-num">STEP 03</div>
+                        <div class="mg-ps-icon"><i class="fa-solid fa-code"></i></div>
+                        <h5>Development</h5>
+                        <p>Agile coding, theme integration, and custom module development.</p>
+                    </div>
+                    <div class="mg-process-arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+                    <div class="mg-process-step">
+                        <div class="mg-ps-num">STEP 04</div>
+                        <div class="mg-ps-icon"><i class="fa-solid fa-bug-slash"></i></div>
+                        <h5>Testing &amp; QA</h5>
+                        <p>Comprehensive security, performance, and functional testing.</p>
+                    </div>
+                    <div class="mg-process-arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+                    <div class="mg-process-step">
+                        <div class="mg-ps-num">STEP 05</div>
+                        <div class="mg-ps-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h5>Launch &amp; Support</h5>
+                        <p>Smooth deployment followed by ongoing monitoring and optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── FAQ ── -->
+        <section class="mg-section mg-section-dark">
+            <div class="auto-container">
+                <div class="row g-5 align-items-start">
+                    <div class="col-lg-4 wow fadeInLeft">
+                        <div class="mg-label"><span class="mg-label-dot"></span> FAQ</div>
+                        <h2 class="mg-heading">Frequently Asked <span>Questions</span></h2>
+                        <p style="color:#888;font-size:15px;line-height:1.7;margin-top:12px;">Got questions about Magento development? We've got answers.</p>
+                        <a href="contact-us.html" class="mg-btn-primary" style="margin-top:24px;display:inline-flex;">Ask a Question <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="col-lg-8 wow fadeInRight">
+                        <div class="mg-faq-list">
+                            <div class="mg-faq-item active">
+                                <div class="mg-faq-q">How long does it take to build a custom Magento 2 store? <i class="fa-solid fa-chevron-down"></i></div>
+                                <div class="mg-faq-a">A standard Magento 2 implementation usually takes between 2 to 4 months. More complex enterprise solutions with extensive customizations and integrations may take 4 to 6 months or more, depending on your specific requirements.</div>
+                            </div>
+                            <div class="mg-faq-item">
+                                <div class="mg-faq-q">Can you migrate my existing store to Magento 2? <i class="fa-solid fa-chevron-down"></i></div>
+                                <div class="mg-faq-a">Yes! We provide seamless migration services from platforms like Magento 1, Shopify, WooCommerce, and BigCommerce to Magento 2, ensuring that all your products, customer data, and SEO equity are preserved.</div>
+                            </div>
+                            <div class="mg-faq-item">
+                                <div class="mg-faq-q">Do you provide custom module development? <i class="fa-solid fa-chevron-down"></i></div>
+                                <div class="mg-faq-a">Absolutely. While there are thousands of ready-made extensions, we frequently develop bespoke modules to address unique business logic, complex shipping rules, or specific third-party integrations that off-the-shelf plugins can't handle.</div>
+                            </div>
+                            <div class="mg-faq-item">
+                                <div class="mg-faq-q">Is Magento 2 suitable for B2B eCommerce? <i class="fa-solid fa-chevron-down"></i></div>
+                                <div class="mg-faq-a">Magento 2 (especially Adobe Commerce) is widely considered one of the best platforms for B2B. It natively supports features like company accounts, customized catalogs, quoting systems, requisition lists, and advanced pricing models out-of-the-box.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CTA ── -->
+        <section class="mg-cta">
+            <div class="auto-container">
+                <div class="mg-cta-inner wow fadeInUp">
+                    <div class="mg-label" style="margin:0 auto 20px;"><span class="mg-label-dot"></span> Let's Build Something Great</div>
+                    <h2 class="mg-cta-title">Ready to Elevate Your <span style="color:var(--mg-color);">eCommerce Experience?</span></h2>
+                    <p class="mg-cta-text">Partner with our certified Magento experts to build a store that looks beautiful, performs flawlessly, and drives conversions.</p>
+                    <div class="mg-cta-btns">
+                        <a href="contact-us.html" class="mg-btn-primary">Start Your Project <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="tel:+919876543210" class="mg-btn-outline"><i class="fa-solid fa-phone"></i> +91 9876543210</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="main-footer footer-style-one">
+            <div class="outer-box style-home-one">
+                <div class="bg-image"><img src="images/resource/footer1-1.png" alt=""></div>
+                <div class="auto-container">
+                    <div class="widgets-section pt-0">
+                        <div class="row gx-4">
+                            <div class="footer-column col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                                <div class="footer-widget about-widget wow fadeInLeft">
+                                    <div class="widget-content">
+                                        <div class="logo"><img src="images/logo.png" alt=""></div>
+                                        <div class="text">FIVEFOX Infotech is a leading digital agency delivering innovative web, mobile, and software solutions to help businesses grow and succeed in the digital world.</div>
+                                        <div class="form-clt">
+                                            <input type="email" name="e-mail" placeholder="Enter your email" required="">
+                                            <button class="theme-btn" type="submit">Subscribe <span><img src="images/icons/arrow2.png" alt=""></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-column col-xl-2 offset-xl-1 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                <div class="footer-widget links-widget">
+                                    <div class="h5 widget-title">Company</div>
+                                    <div class="widget-content">
+                                        <ul class="user-links">
+                                            <li><a href="about-us.html">About Us</a></li>
+                                            <li><a href="services-page.html">Services</a></li>
+                                            <li><a href="portfolio.html">Portfolio</a></li>
+                                            <li><a href="blog.html">Blogs</a></li>
+                                            <li><a href="contact-us.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-column col-xl-2 col-md-6 wow fadeInUp" data-wow-delay="600ms">
+                                <div class="footer-widget links-widget">
+                                    <div class="h5 widget-title">Magento Services</div>
+                                    <div class="widget-content">
+                                        <ul class="user-links">
+                                            <li><a href="magento-support-maintenance.html">Support &amp; Maintenance</a></li>
+                                            <li><a href="magento-development.html">Magento 2 Development</a></li>
+                                            <li><a href="services-page.html">Magento 2 Upgrade</a></li>
+                                            <li><a href="services-page.html">Magento 2 Migration</a></li>
+                                            <li><a href="magento-extension.html">Magento 2 Extension</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-column col-xl-3 col-md-6 wow fadeInUp" data-wow-delay="800ms">
+                                <div class="footer-widget contact-widget">
+                                    <div class="h5 widget-title">Contact</div>
+                                    <div class="widget-content">
+                                        <div class="info"><i class="icon fa-solid fa-phone-flip"></i><span>+91 9876543210</span></div>
+                                        <div class="info"><i class="icon fa-solid fa-envelope"></i><span>fivefoxinfotech@gmail.com</span></div>
+                                        <div class="info"><i class="icon fa-solid fa-location-dot"></i><span>Ahmedabad, Gujarat<br>India</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom wow fadeInUp" data-wow-delay="600ms">
+                        <div class="inner-container">
+                            <p>© 2026 FIVEFOX Infotech. All Rights Reserved.</p>
+                            <ul class="social-icon">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i><span>Facebook</span></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i><span>Twitter</span></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/splitType.js"></script>
+    <script src="js/gsap-scroll-smoother.js"></script>
+    <script src="js/ScrollSmoother.min.js"></script>
+    <script src="js/gsap-scroll-to-plugin.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/knob.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/custom-gsap.js"></script>
+    <script src="js/jquery-scrolltofixed-min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+    /* FAQ Toggle */
+    document.querySelectorAll('.mg-faq-q').forEach(function(q) {
+        q.addEventListener('click', function() {
+            var item = this.closest('.mg-faq-item');
+            var isActive = item.classList.contains('active');
+            document.querySelectorAll('.mg-faq-item').forEach(function(i) { i.classList.remove('active'); });
+            if (!isActive) item.classList.add('active');
+        });
+    });
+
+    /* Mega Menu */
+    (function () {
+        function initMegaMenu(trigger) {
+            const menu = trigger.querySelector('.mega-menu');
+            if (!menu) return;
+            function getBottom() {
+                const header = trigger.closest('.sticky-header') || trigger.closest('header');
+                return header ? header.getBoundingClientRect().bottom : 0;
+            }
+            function openMenu() { menu.style.top = getBottom() + 'px'; menu.classList.add('is-open'); }
+            function closeMenu() { menu.classList.remove('is-open'); }
+            trigger.addEventListener('mouseenter', openMenu);
+            trigger.addEventListener('mouseleave', function(e) { if (!menu.contains(e.relatedTarget)) closeMenu(); });
+            menu.addEventListener('mouseenter', openMenu);
+            menu.addEventListener('mouseleave', function(e) { if (!trigger.contains(e.relatedTarget)) closeMenu(); });
+            document.addEventListener('click', function(e) { if (!trigger.contains(e.target) && !menu.contains(e.target)) closeMenu(); });
+            window.addEventListener('scroll', function() { if (menu.classList.contains('is-open')) menu.style.top = getBottom() + 'px'; });
+            window.addEventListener('resize', function() { if (menu.classList.contains('is-open')) menu.style.top = getBottom() + 'px'; });
+        }
+        document.querySelectorAll('.has-mega-menu').forEach(initMegaMenu);
+    })();
+    </script>
+</body>
+</html>
